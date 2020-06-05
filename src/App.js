@@ -1,26 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './Navbar';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Accueil from './vues/Accueil';
+import Realisations from './vues/Realisations';
+import Experiences from './vues/Experiences';
+import Competences from './vues/Competences';
+import Inconnu from './vues/Inconnu';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Navbar />
+        <Switch>
+          <Route path="/" exact component={Accueil} />
+          <Route path="/competences" exact component={Competences} />
+          <Route path="/competences/techniques" exact />
+          <Route path="/competences/techniques/:nom" />
+          <Route path="/competences/transverses" exact />
+          <Route path="/competences/transverses/:nom" />
+          <Route path="/realisations" exact component={Realisations} />
+          <Route path="/realisations/:nom" />
+          <Route path="/experiences" exact component={Experiences} />
+          <Route component={Inconnu}/>
+        </Switch>
+      </div>
+    </BrowserRouter>
   );
 }
-
-export default App;
