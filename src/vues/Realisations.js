@@ -1,37 +1,23 @@
 import React from 'react'
+import Service from '../services/portfolio-service'
 import { Link } from 'react-router-dom'
 
 export default function Realisations() {
+
+    const realisations = Service.obtenirRealisations()
+
     return (
         <div className="container">
             <h2>Réalisations <span role="img" aria-label="realisations">👌</span></h2>
             <hr className="my-4" />
-
-            <div className="row">
-                <div className="col-md-12">
-                    <h5><Link to="./realisations/infomil">INFOMIL <span role="img" aria-label="infomil">📁</span></Link></h5>
-                    <ul>
-                        <li><Link to="./realisations/referencement_terminaux">Référencement pour les terminaux</Link> <span role="img" aria-label="referencement">🖥️</span></li>
-                        <li><Link to="./realisations/gestion_parc_terminaux">Gestion de parc pour les terminaux</Link> <span role="img" aria-label="gestion-parc">🌐</span></li>
-                        <li><Link to="./realisations/surveillance_terminaux">Application mobile de surveillance des terminaux</Link> <span role="img" aria-label="surveillance">📱</span></li>
-                        <li><Link to="./realisations/migration_sql">Migration SQL Server en PostgreSQL</Link> <span role="img" aria-label="migration-sql">🖥️</span></li>
-                        <li><Link to="realisations/recuperation_log_terminaux">Récupération des logs des terminaux</Link> <span role="img" aria-label="recuperation-log">🖥️</span></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div className="row">
-                <div className="col-md-12">
-                    <h5><Link to={"/realisations/intech"}>IN'TECH <span role="img" aria-label="intech">📁</span></Link></h5>
-                    <ul>
-                        <li><Link to={"/realisations/chambre_agriculture"}>Application mobile pour la Chambre de l'Agriculture</Link> <span role="img" aria-label="chambre-agriculture">📱</span></li>
-                        <li><Link to={"/realisations/wawee"}>Application mobile pour Wawee</Link> <span role="img" aria-label="wawee">📱</span></li>
-                        <li><Link to={"/realisations/clinique_st_hilaire"}>Résérvation pour les médecins de la Clinique Esquirol Saint Hilaire</Link> <span role="img" aria-label="clinique-st-hilaire">🌐</span></li>
-                        <li><Link to={"/realisations/upsa"}>Gestionnaire de fichier pour UPSA</Link> <span role="img" aria-label="upsa">🌐</span></li>
-                        <li><Link to={"/realisations/still_english"}>Jeu Still English</Link> <span role="img" aria-label="still-english">🌐</span></li>
-                        <li><Link to={"/realisations/bureau_etudiant_intech"}>Bureau des étudiants d'IN'TECH</Link> <span role="img" aria-label="intech">🌐</span></li>
-                    </ul>
-                </div>
+            <div className="card-columns">{realisations.map((realisation, index) =>
+                <div className="card" key={index}>
+                    <div className="card-body">
+                        <Link to={`/realisations/${realisation.nom}`}><h5 className="card-title">{realisation.titre}</h5></Link>
+                        <p className="card-text">{realisation.description}</p>
+                        <p className="card-text"><small className="text-muted">– {realisation.client}</small></p>
+                    </div>
+                </div>)}
             </div>
         </div>
     );

@@ -4,8 +4,7 @@ import { Link } from 'react-router-dom'
 
 export default function Competence({ match }) {
 
-    const nom = match.params.nom
-    const competence = Service.obtenirCompetenceParNom(nom)
+    const competence = Service.obtenirCompetenceParNom(match.params.nom)
 
     return (
         <div className="container">
@@ -13,14 +12,15 @@ export default function Competence({ match }) {
             <span className="badge badge-primary">{competence.type}</span>
             <small className="text-muted"> ・ {competence.temps_lecture} minutes de lecture</small>
             <hr className="my-4" />
-            <p>{competence.contenu}</p>
+            <div dangerouslySetInnerHTML={{__html: competence.contenu }} />
             <hr className="my-4" />
-            <ul className="list-inline">
-                {competence.realisations.map((realisation, index) =>
-                    <li className="list-inline-item" key={index}><Link to={`/realisations/${realisation}`} className="badge badge-dark">{realisation}</Link></li>
-                )}
+            <ul className="list-inline">{competence.realisations.map((realisation, index) =>
+                <li className="list-inline-item" key={index}>
+                    <Link to={`/realisations/${realisation}`} className="badge badge-dark">
+                        {Service.obtenirRealisationParNom(realisation).titre}
+                    </Link>
+                </li>)}
             </ul>
         </div >
     );
-
 }

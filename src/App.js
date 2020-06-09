@@ -17,7 +17,7 @@ export default function App() {
                 <Switch>
                     <Route path="/" exact component={Accueil} />
                     <Route path="/competences" exact component={Competences} />
-                    <Route path="/competences/:type/:nom" component={Competence} />
+                    <Route path="/competences/:nom" component={Competence} />
                     <Route path="/realisations" exact component={Realisations} />
                     <Route path="/realisations/:nom" component={Realisation} />
                     <Route path="/experiences" exact component={Experiences} />
