@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Experiences() {
     return (
@@ -13,9 +14,9 @@ export default function Experiences() {
                             SS2I Toulousaine, j’ai intégré le pôle étude et développement durant un stage de 6
                         mois.</p>
                         <p className="card-text">
-                            J’ai travaillé sur plusieurs projets de développement en <a
-                                href="./competences/techniques/csharp.htm">C#</a> et <a
-                                    href="./competences/techniques/java.htm">Java</a>, ce qui m’a permis de
+                            J’ai travaillé sur plusieurs projets de développement en <Link
+                                to="/competences/techniques/csharp">C#</Link> et <Link
+                                    to="/competences/techniques/java">Java</Link>, ce qui m’a permis de
                         développer mes compétences en ingénierie du logiciel.</p>
                     </div>
                     <div className="card-footer">
