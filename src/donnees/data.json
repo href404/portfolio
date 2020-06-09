@@ -1,0 +1,126 @@
+{
+    "competences": [
+        {
+            "nom": "csharp",
+            "type": "Technique",
+            "titre": "C#",
+            "realisations": [
+                "recuperation_log_terminaux",
+                "migration_sql",
+                "surveillance_terminaux",
+                "gestion_parc_terminaux",
+                "chambre_agriculture"
+            ],
+            "temps_lecture": 5,
+            "contenu": "Les informations pour cette compétence sont en cours de rédaction..."
+        },
+        {
+            "nom": "android",
+            "type": "Technique",
+            "titre": "Android",
+            "realisations": [
+                "surveillance_terminaux",
+                "lecteur_configuration"
+            ],
+            "temps_lecture": 3,
+            "contenu": "Les informations pour cette compétence sont en cours de rédaction..."
+        },
+        {
+            "nom": "xamarin",
+            "type": "Technique",
+            "titre": "Xamarin",
+            "realisations": [
+                "chambre_agriculture"
+            ],
+            "temps_lecture": 4,
+            "contenu": "Les informations pour cette compétence sont en cours de rédaction..."
+        },
+        {
+            "nom": "javascript",
+            "type": "Technique",
+            "titre": "JavaScript",
+            "realisations": [
+                "gestion_parc_terminaux",
+                "bureau_etudiant_intech"
+            ],
+            "temps_lecture": 4,
+            "contenu": "Les informations pour cette compétence sont en cours de rédaction..."
+        },
+        {
+            "nom": "docker",
+            "type": "Technique",
+            "titre": "Docker 🐋",
+            "realisations": [
+                "lecteur_configuration"
+            ],
+            "temps_lecture": 2,
+            "contenu": "Les informations pour cette compétence sont en cours de rédaction..."
+        },
+        {
+            "nom": "bash",
+            "type": "Technique",
+            "titre": "Bash",
+            "realisations": [
+                "lecteur_configuration"
+            ],
+            "temps_lecture": 2,
+            "contenu": "Les informations pour cette compétence sont en cours de rédaction..."
+        },
+        {
+            "nom": "php",
+            "type": "Technique",
+            "titre": "PHP",
+            "realisations": [
+                "still_english",
+                "upsa",
+                "clinique_st_hilaire",
+                "wawee"
+            ],
+            "temps_lecture": 2,
+            "contenu": "Les informations pour cette compétence sont en cours de rédaction..."
+        },
+        {
+            "nom": "sql",
+            "type": "Technique",
+            "titre": "SQL 📊",
+            "realisations": [
+                "gestion_parc_terminaux",
+                "migration_sql",
+                "recuperation_log_terminaux",
+                "chambre_agriculture",
+                "wawee",
+                "clinique_st_hilaire",
+                "upsa",
+                "still_english"
+            ],
+            "temps_lecture": 3,
+            "contenu": "Les informations pour cette compétence sont en cours de rédaction..."
+        },
+        {
+            "nom": "versionning",
+            "type": "Technique",
+            "titre": "Versionning 🗄️",
+            "realisations": [
+                "gestion_parc_terminaux",
+                "migration_sql",
+                "recuperation_log_terminaux",
+                "chambre_agriculture",
+                "wawee",
+                "clinique_st_hilaire",
+                "upsa",
+                "still_english",
+                "bureau_etudiant_intech"
+            ],
+            "temps_lecture": 6,
+            "contenu": "Les informations pour cette compétence sont en cours de rédaction..."
+        },
+        {
+            "nom": "communication",
+            "type": "Transverse",
+            "titre": "Communication",
+            "contenu": "Les informations pour cette compétence sont en cours de rédaction..."
+        }
+    ],
+    "realisations": [],
+    "experiences": []
+}

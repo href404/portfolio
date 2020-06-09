@@ -16,7 +16,7 @@ export default function Experiences() {
                         <p className="card-text">
                             J’ai travaillé sur plusieurs projets de développement en <Link
                                 to="/competences/techniques/csharp">C#</Link> et <Link
-                                    to="/competences/techniques/java">Java</Link>, ce qui m’a permis de
+                                    to="/competences/techniques/android">Android</Link>, ce qui m’a permis de
                         développer mes compétences en ingénierie du logiciel.</p>
                     </div>
                     <div className="card-footer">
