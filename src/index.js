@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Navbar from './vues/barre-navigation';
 import Accueil from './vues/accueil';
-import Realisations from './vues/Realisations';
+import Realisations from './vues/realisations';
 import Experiences from './vues/experiences';
 import Competences from './vues/competences';
 import Inconnu from './vues/inconnu';
-import Realisation from './vues/Realisation';
+import Realisation from './vues/realisation';
 import Competence from './vues/competence';
 import './index.css';
 
