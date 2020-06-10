@@ -173,7 +173,7 @@
             "nom": "gestion_parc_terminaux",
             "type": "🌐",
             "titre": "Gestion de parc pour les terminaux",
-            "description": "Sed id tincidunt felis. Morbi nec elementum enim. Nunc vel consequat turpis, id tincidunt leo. Aliquam sit amet molestie massa, ut lobortis libero. Nam blandit, diam ac pellentesque euismod, enim ligula volutpat tortor, in sollicitudin nisi ante in lectus. Nulla ante augue, pulvinar ut mi at, varius tincidunt mauris. Praesent eget dolor sit amet lacus dignissim pharetra a at augue.",
+            "description": "Application web ayant pour objectif de gérer le parc de terminaux d'INFOMIL.",
             "competences": [
                 "javascript",
                 "csharp",
@@ -188,7 +188,7 @@
             "nom": "lecteur_configuration",
             "type": "📱",
             "titre": "Lecteur de configuration pour les bornes",
-            "description": "Sed id tincidunt felis. Morbi nec elementum enim. Nunc vel consequat turpis, id tincidunt leo. Aliquam sit amet molestie massa, ut lobortis libero. Nam blandit, diam ac pellentesque euismod, enim ligula volutpat tortor, in sollicitudin nisi ante in lectus. Nulla ante augue, pulvinar ut mi at, varius tincidunt mauris. Praesent eget dolor sit amet lacus dignissim pharetra a at augue.",
+            "description": "Application Android permettant la lecture de planche de configuration (code à barre) afin de déployer des usages sur des terminaux.",
             "competences": [
                 "android",
                 "csharp",
@@ -206,7 +206,7 @@
             "nom": "surveillance_terminaux",
             "type": "📱",
             "titre": "Application mobile de surveillance des terminaux",
-            "description": "Sed id tincidunt felis. Morbi nec elementum enim. Nunc vel consequat turpis, id tincidunt leo. Aliquam sit amet molestie massa, ut lobortis libero. Nam blandit, diam ac pellentesque euismod, enim ligula volutpat tortor, in sollicitudin nisi ante in lectus. Nulla ante augue, pulvinar ut mi at, varius tincidunt mauris. Praesent eget dolor sit amet lacus dignissim pharetra a at augue.",
+            "description": "Service Android permettant de remonter des informations toutes les x minutes sur les terminaux du parc.",
             "competences": [
                 "android",
                 "csharp",
@@ -221,7 +221,7 @@
             "nom": "migration_sql",
             "type": "🖥️",
             "titre": "Migration SQL Server vers PostgreSQL",
-            "description": "Sed id tincidunt felis. Morbi nec elementum enim. Nunc vel consequat turpis, id tincidunt leo. Aliquam sit amet molestie massa, ut lobortis libero. Nam blandit, diam ac pellentesque euismod, enim ligula volutpat tortor, in sollicitudin nisi ante in lectus. Nulla ante augue, pulvinar ut mi at, varius tincidunt mauris. Praesent eget dolor sit amet lacus dignissim pharetra a at augue.",
+            "description": "Application console visant à migrer la structure et le contenu d'une base de données SQL Server dans une base de données PostgreSQL.",
             "competences": [
                 "csharp",
                 "sql",
@@ -235,7 +235,7 @@
             "nom": "recuperation_log_terminaux",
             "type": "🖥️",
             "titre": "Récupération des logs des terminaux",
-            "description": "Sed id tincidunt felis. Morbi nec elementum enim. Nunc vel consequat turpis, id tincidunt leo. Aliquam sit amet molestie massa, ut lobortis libero. Nam blandit, diam ac pellentesque euismod, enim ligula volutpat tortor, in sollicitudin nisi ante in lectus. Nulla ante augue, pulvinar ut mi at, varius tincidunt mauris. Praesent eget dolor sit amet lacus dignissim pharetra a at augue.",
+            "description": "Application WinForm permettant de récupérer les informations d'un terminal et d'intéragir avec le contenu de carte mémoire notamment dans le cadre de la récupération des logs générés par les applications d'INFOMIL.",
             "competences": [
                 "csharp",
                 "sql",
@@ -249,7 +249,7 @@
             "nom": "chambre_agriculture",
             "type": "📱",
             "titre": "Application mobile pour la Chambre de l'Agriculture",
-            "description": "Sed id tincidunt felis. Morbi nec elementum enim. Nunc vel consequat turpis, id tincidunt leo. Aliquam sit amet molestie massa, ut lobortis libero. Nam blandit, diam ac pellentesque euismod, enim ligula volutpat tortor, in sollicitudin nisi ante in lectus. Nulla ante augue, pulvinar ut mi at, varius tincidunt mauris. Praesent eget dolor sit amet lacus dignissim pharetra a at augue.",
+            "description": "Application Android permettant de géolocaliser les agriculteurs et marchés de la marque Bienvenue à la Ferme.",
             "competences": [
                 "xamarin",
                 "php",
@@ -264,7 +264,7 @@
             "nom": "wawee",
             "type": "📱",
             "titre": "Application mobile pour Wawee",
-            "description": "Sed id tincidunt felis. Morbi nec elementum enim. Nunc vel consequat turpis, id tincidunt leo. Aliquam sit amet molestie massa, ut lobortis libero. Nam blandit, diam ac pellentesque euismod, enim ligula volutpat tortor, in sollicitudin nisi ante in lectus. Nulla ante augue, pulvinar ut mi at, varius tincidunt mauris. Praesent eget dolor sit amet lacus dignissim pharetra a at augue.",
+            "description": "Application Android permettant la création et le partage d'événement.",
             "competences": [
                 "android",
                 "php",
@@ -279,7 +279,7 @@
             "nom": "clinique_st_hilaire",
             "type": "🌐",
             "titre": "Résérvation pour les médecins de la Clinique Esquirol Saint Hilaire",
-            "description": "Sed id tincidunt felis. Morbi nec elementum enim. Nunc vel consequat turpis, id tincidunt leo. Aliquam sit amet molestie massa, ut lobortis libero. Nam blandit, diam ac pellentesque euismod, enim ligula volutpat tortor, in sollicitudin nisi ante in lectus. Nulla ante augue, pulvinar ut mi at, varius tincidunt mauris. Praesent eget dolor sit amet lacus dignissim pharetra a at augue.",
+            "description": "Application web permettant aux médecins, le suivi des patients à distance.",
             "competences": [
                 "php",
                 "javascript",
@@ -294,7 +294,7 @@
             "nom": "upsa",
             "type": "🌐",
             "titre": "Gestionnaire de fichier pour UPSA",
-            "description": "Sed id tincidunt felis. Morbi nec elementum enim. Nunc vel consequat turpis, id tincidunt leo. Aliquam sit amet molestie massa, ut lobortis libero. Nam blandit, diam ac pellentesque euismod, enim ligula volutpat tortor, in sollicitudin nisi ante in lectus. Nulla ante augue, pulvinar ut mi at, varius tincidunt mauris. Praesent eget dolor sit amet lacus dignissim pharetra a at augue.",
+            "description": "Application web permettant à UPSA de partager leurs fichiers.",
             "competences": [
                 "php",
                 "javascript",
@@ -309,7 +309,7 @@
             "nom": "still_english",
             "type": "🌐",
             "titre": "Jeu Still English",
-            "description": "Sed id tincidunt felis. Morbi nec elementum enim. Nunc vel consequat turpis, id tincidunt leo. Aliquam sit amet molestie massa, ut lobortis libero. Nam blandit, diam ac pellentesque euismod, enim ligula volutpat tortor, in sollicitudin nisi ante in lectus. Nulla ante augue, pulvinar ut mi at, varius tincidunt mauris. Praesent eget dolor sit amet lacus dignissim pharetra a at augue.",
+            "description": "Application web permettant de jouer au jeu de plateau Still English dans une version numérique.",
             "competences": [
                 "php",
                 "javascript",
@@ -324,7 +324,7 @@
             "nom": "bureau_etudiant_intech",
             "type": "🌐",
             "titre": "Bureau des étudiants d'IN'TECH",
-            "description": "Sed id tincidunt felis. Morbi nec elementum enim. Nunc vel consequat turpis, id tincidunt leo. Aliquam sit amet molestie massa, ut lobortis libero. Nam blandit, diam ac pellentesque euismod, enim ligula volutpat tortor, in sollicitudin nisi ante in lectus. Nulla ante augue, pulvinar ut mi at, varius tincidunt mauris. Praesent eget dolor sit amet lacus dignissim pharetra a at augue.",
+            "description": "Application web permettant aux adhérents du bureau des étudiants d'IN'TECH de partager des les futurs événement et informations du campus.",
             "competences": [
                 "javascript"
             ],
