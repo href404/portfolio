@@ -15,7 +15,7 @@ export default function Realisations() {
                     <div className="card-body">
                         <Link to={`/realisations/${realisation.nom}`}><h5 className="card-title">{realisation.titre}</h5></Link>
                         <p className="card-text">{realisation.description}</p>
-                        <p className="card-text"><small className="text-muted">– {realisation.client}</small></p>
+                        <p className="card-text"><small className="text-muted">– {realisation.client} ・ {realisation.type}</small></p>
                     </div>
                 </div>)}
             </div>

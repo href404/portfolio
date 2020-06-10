@@ -12,7 +12,7 @@ export default function Competence({ match }) {
             <span className="badge badge-primary">{competence.type}</span>
             <small className="text-muted"> ・ {competence.temps_lecture} minutes de lecture</small>
             <hr className="my-4" />
-            <div dangerouslySetInnerHTML={{__html: competence.contenu }} />
+            <div dangerouslySetInnerHTML={{ __html: competence.contenu }} />
             <hr className="my-4" />
             <ul className="list-inline">{competence.realisations.map((realisation, index) =>
                 <li className="list-inline-item" key={index}>
