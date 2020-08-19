@@ -5,12 +5,14 @@ import { Link } from 'react-router-dom'
 export default function Competence({ match }) {
 
     const competence = Service.obtenirCompetenceParNom(match.params.nom)
+    const nbreMots = competence.contenu.split(' ').length
+    const tempsLecture = (nbreMots / 200).toFixed()
 
     return (
         <div className="container">
             <h2>{competence.titre}</h2>
             <span className="badge badge-primary">{competence.type}</span>
-            <small className="text-muted"> ・ {competence.temps_lecture} minutes de lecture</small>
+            <small className="text-muted"> ・ {tempsLecture} minutes de lecture</small>
             <hr className="my-4" />
             <div dangerouslySetInnerHTML={{ __html: competence.contenu }} />
             <hr className="my-4" />
@@ -23,4 +25,5 @@ export default function Competence({ match }) {
             </ul>
         </div >
     );
+    
 }

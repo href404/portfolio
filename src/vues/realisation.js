@@ -5,12 +5,14 @@ import { Link } from 'react-router-dom'
 export default function Realisation({ match }) {
 
     const realisation = Service.obtenirRealisationParNom(match.params.nom)
+    const nbreMots = realisation.contenu.split(' ').length
+    const tempsLecture = (nbreMots / 200).toFixed()
 
     return (
         <div className="container">
             <h2>{realisation.titre}</h2>
             <span className="badge badge-primary">Réalisation</span>
-            <small className="text-muted"> ・ {realisation.temps_lecture} minutes de lecture  ・ {realisation.type}</small>
+            <small className="text-muted"> ・ {tempsLecture} minutes de lecture  ・ {realisation.type}</small>
             <hr className="my-4" />
             <div dangerouslySetInnerHTML={{__html: realisation.contenu }} />
             <hr className="my-4" />
