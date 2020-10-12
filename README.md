@@ -22,12 +22,12 @@
 ### Semestre 9
 - [ ] Article amélioré de la compétence humaine rédigée au cours précédent
 - [ ] Article sur une compétence technique
-- [ ] Analyse du test Talentoday
+- [x] Analyse du test Talentoday
 - [ ] Tableau (nuage) de compétences humaines
-- [ ] Analyse des exemples de portfolios en binôme
+- [x] Analyse des exemples de portfolios en binôme
 - [ ] Compétences humaines rédigées
 - [ ] Article sur soi, intégrant une problématique liée à la responsbilité humaine, sociétale ou environnementale de l'Expert en ingénierie
-- [ ] Tableau de vos observations sur les 4 portfolios étudiés
+- [x] Tableau de vos observations sur les 4 portfolios étudiés
 - [ ] Représentation graphique de son profil de compétences
 - [ ] Choix des visuels du portfolio
 - [ ] Argumentation de la forme choisie pour votre portfolio (en quoi cela me représente-t-il et/ou est-il impactant et/ou efficace ?)
