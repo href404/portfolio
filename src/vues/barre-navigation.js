@@ -15,6 +15,7 @@ export default function Navbar() {
                         <li className="nav-item"><NavLink to={"/competences"} className="nav-link" activeClassName="active">Compétences</NavLink></li>
                         <li className="nav-item"><NavLink to={"/realisations"} className="nav-link" activeClassName="active">Réalisations</NavLink></li>
                         <li className="nav-item"><NavLink to={"/experiences"} className="nav-link" activeClassName="active">Expériences</NavLink></li>
+                        <li className="nav-item"><a href="/CV_PIERRE_JULIEN.pdf" className="nav-link" download="CV_PIERRE_JULIEN">Curriculum vitæ</a></li>
                     </ul>
                 </div>
             </nav>

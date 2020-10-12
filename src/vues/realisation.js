@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom'
 
 export default function Realisation({ match }) {
 
-    const realisation = Service.obtenirRealisationParNom(match.params.nom)
+    const service = Service.obtenirInstance()
+    const realisation = service.obtenirRealisationParNom(match.params.nom)
     const nbreMots = realisation.contenu.split(' ').length
     const tempsLecture = (nbreMots / 200).toFixed()
 
@@ -19,7 +20,7 @@ export default function Realisation({ match }) {
             <ul className="list-inline">{realisation.competences.map((competence, index) =>
                 <li className="list-inline-item" key={index}>
                     <Link to={`/competences/${competence}`} className="badge badge-dark">
-                        {Service.obtenirCompetenceParNom(competence).titre}
+                        {service.obtenirCompetenceParNom(competence).titre}
                     </Link>
                 </li>)}
             </ul>

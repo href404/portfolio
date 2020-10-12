@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom'
 
 export default function Competences() {
 
-    const competencesTechniques = Service.obtenirCompetencesTechniques()
-    const competencesTransverses = Service.obtenirCompetencesTransverses()
+    const service = Service.obtenirInstance()
+    const competencesTechniques = service.obtenirCompetencesTechniques()
+    const competencesTransverses = service.obtenirCompetencesTransverses()
 
     return (
         <div className="container">

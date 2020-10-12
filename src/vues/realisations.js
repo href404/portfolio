@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom'
 
 export default function Realisations() {
 
-    const realisations = Service.obtenirRealisations()
+    const service = Service.obtenirInstance()
+    const realisations = service.obtenirRealisations()
 
     return (
         <div className="container">
