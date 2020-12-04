@@ -15,7 +15,7 @@
 - [ ] 1 réalisation rédigée selon critères
 - [x] Arborescence du portfolio, liens entre les pages (navigation circulaire)
 - [x] Wireframe (maquette fonctionnelle) de la page d’accueil
-- [ ] 1 compétence humaine rédigée selon critères
+- [x] 1 compétence humaine rédigée selon critères
 - [x] Choix des compétences et réalisations pour le portfolio
 - [x] Navigation circulaire entre une compétence et une réalisation
 
