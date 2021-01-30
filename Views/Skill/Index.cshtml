@@ -1,0 +1,24 @@
+﻿@model Portfolio.ViewModels.Skill.SkillIndexViewModel
+
+<h2>Compétences <span role="img" aria-label="competences">🏔️</span></h2>
+<hr class="my-4" />
+<div class="row">
+    <div class="col-md-6">
+        <h5>Techniques <span role="img" aria-label="competences-techniques">📁</span></h5>
+        <ul>
+            @foreach (var skill in Model.Techincals)
+            {
+                <li><a asp-controller="Skill" asp-action="Detail" asp-route-skillname=@skill.Name>@skill.Title</a></li>
+            }
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <h5>Transverses <span role="img" aria-label="competences-transverses">📁</span></h5>
+        <ul>
+            @foreach (var skill in Model.Humans)
+            {
+                <li><a asp-controller="Skill" asp-action="Detail" asp-route-skillname=@skill.Name>@skill.Title</a></li>
+            }
+        </ul>
+    </div>
+</div>

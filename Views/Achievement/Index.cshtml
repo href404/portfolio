@@ -1,0 +1,20 @@
+﻿@model Portfolio.ViewModels.Achievement.AchievementIndexViewModel
+
+<h2>Réalisations <span role="img" aria-label="realisations">👌</span></h2>
+<hr class="my-4" />
+<div class="card-columns">
+    @foreach (var achievement in Model.Achievements)
+    {
+        <div class="card" key={index}>
+            <div class="card-body">
+                <a asp-controller="Achievement" 
+                   asp-action="Detail" 
+                   asp-route-achievementname=@achievement.Name>
+                    <h5 class="card-title">@achievement.Title</h5>
+                </a>
+                <p class="card-text">@achievement.Description</p>
+                <p class="card-text"><small class="text-muted">– @achievement.Client ・ @Model.GetAchievementTypeIcon(achievement)</small></p>
+            </div>
+        </div>
+    }
+</div>

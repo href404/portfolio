@@ -1,0 +1,26 @@
+﻿@model Portfolio.ViewModels.Achievement.AchievementDetailViewModel
+
+<h2>@Model.Achievement.Title</h2>
+<span class="badge badge-primary">Réalisation</span>
+<small class="text-muted"> ・ @Model.GetReadTime() minutes de lecture  ・ @Model.GetAchievementTypeIcon(Model.Achievement)</small>
+
+<hr class="my-4" />
+@Html.Raw(Model.GetStaticHtml())
+
+@if (Model.Skills.Any())
+{
+    <hr class="my-4" />
+    <ul class="list-inline">
+        @foreach (var skill in Model.Skills)
+        {
+            <li class="list-inline-item">
+                <a class="badge badge-dark"
+                   asp-controller="Skill"
+                   asp-action="Detail"
+                   asp-route-skillname=@skill.Name>
+                    @skill.Title
+                </a>
+            </li>
+        }
+    </ul>
+}
