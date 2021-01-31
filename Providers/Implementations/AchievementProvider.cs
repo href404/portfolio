@@ -120,6 +120,6 @@ namespace Portfolio.Providers.Implementations
             },
         };
 
-        public async Task<IEnumerable<Achievement>> GetAchievements() => achievements;
+        public async Task<IEnumerable<Achievement>> GetAchievements() => await Task.Run(() => achievements);
     }
 }

@@ -12,12 +12,12 @@ namespace Portfolio.Controllers
     {
         private readonly IAchievementProvider achievementProvider;
         private readonly ISkillProvider skillProvider;
-        private readonly IHostingEnvironment environment;
+        private readonly IWebHostEnvironment environment;
 
         public AchievementController(
             IAchievementProvider achievementProvider,
             ISkillProvider skillProvider,
-            IHostingEnvironment environment)
+            IWebHostEnvironment environment)
         {
             this.achievementProvider = achievementProvider;
             this.skillProvider = skillProvider;
