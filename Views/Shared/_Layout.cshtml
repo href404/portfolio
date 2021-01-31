@@ -14,7 +14,7 @@
     <title>Pierre Julien – Ingénieur Logiciel</title>
 </head>
 <body>
-    
+
     <nav class="navbar navbar-expand-lg navbar-light">
         <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Portfolio</a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"
@@ -24,18 +24,18 @@
         <div class="navbar-collapse collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="@Html.IsActive("Skill", "Index")" 
-                       asp-controller="Skill" 
+                    <a class="@Html.IsActive("Skill", "Index")"
+                       asp-controller="Skill"
                        asp-action="Index">Compétences</a>
                 </li>
                 <li class="nav-item">
-                    <a class="@Html.IsActive("Achievement", "Index")" 
-                       asp-controller="Achievement" 
+                    <a class="@Html.IsActive("Achievement", "Index")"
+                       asp-controller="Achievement"
                        asp-action="Index">Réalisations</a>
                 </li>
                 <li class="nav-item">
-                    <a class="@Html.IsActive("Experience", "Index")" 
-                       asp-controller="Experience" 
+                    <a class="@Html.IsActive("Experience", "Index")"
+                       asp-controller="Experience"
                        asp-action="Index">Expériences</a>
                 </li>
                 <li class="nav-item">
