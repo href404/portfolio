@@ -130,6 +130,6 @@ namespace Portfolio.Providers.Implementations
             },
         };
 
-        public async Task<IEnumerable<Skill>> GetSkills() => skills;
+        public async Task<IEnumerable<Skill>> GetSkills() => await Task.Run(() => skills);
     }
 }
