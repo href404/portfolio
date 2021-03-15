@@ -49,3 +49,8 @@
 - [ ] Le plan de votre soutenance dans son état actuel
 - [ ] Le descriptif de vos outils Tedx (métaphores, anecdotes, techniques d’accroches, trait d’humour, supports visuels…) et leur intégration à votre plan)
 - [ ] Portfolio finalisé
+
+
+## Inspirations
+
+Chris Horner : https://chrishorner.codes
