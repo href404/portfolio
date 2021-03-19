@@ -1,5 +1,6 @@
 ﻿using Portfolio.Models;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Portfolio.Providers.Implementations
@@ -120,6 +121,9 @@ namespace Portfolio.Providers.Implementations
             },
         };
 
-        public async Task<IEnumerable<Achievement>> GetAchievements() => await Task.Run(() => achievements);
+        public async Task<IEnumerable<Achievement>> GetAchievements()
+        {
+            return await Task.Run(() => achievements.Where(a => a.Client != "INFOMIL"));
+        }
     }
 }
