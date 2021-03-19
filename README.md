@@ -50,6 +50,9 @@
 - [ ] Le descriptif de vos outils Tedx (métaphores, anecdotes, techniques d’accroches, trait d’humour, supports visuels…) et leur intégration à votre plan)
 - [ ] Portfolio finalisé
 
+## Ressources 
+
+Excel : https://drive.google.com/file/d/1kTkU4A0smfoFB7bW65gsklTVCpU0Jqrl
 
 ## Inspirations
 
