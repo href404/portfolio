@@ -24,3 +24,13 @@
 .undefined-section {
     text-align: center;
 }
+
+.undefined-image {
+    height: 500px;
+}
+
+@media screen and (max-width: 500px) {
+    .undefined-image {
+        height: 300px;
+    }
+}
