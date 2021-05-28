@@ -63,3 +63,10 @@ Hosting & SSL : https://www.rosehosting.com/blog/how-to-install-lets-encrypt-on-
 ## Inspirations
 
 Chris Horner : https://chrishorner.codes
+
+## Commandes
+
+dotnet publish --configuration Release
+sudo systemctl restart portfolio.service
+sudo nano /etc/systemd/system/portfolio.service
+sudo service apache2 restart
