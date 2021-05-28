@@ -4,6 +4,6 @@ namespace Portfolio.ViewModels.Achievement
 {
     public class AchievementIndexViewModel : BaseRealisationViewModel
     {
-        public IEnumerable<Models.Achievement> Achievements { get; set; }
+        public IEnumerable<Models.Achievement> Achievements { get; init; }
     }
 }

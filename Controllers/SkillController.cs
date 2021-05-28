@@ -9,47 +9,49 @@ using System.Threading.Tasks;
 
 namespace Portfolio.Controllers
 {
+    [Route("competences")]
     public class SkillController : Controller
     {
-        private readonly ISkillProvider skillProvider;
-        private readonly IAchievementProvider achievementProvider;
-        private readonly IWebHostEnvironment environment;
+        private readonly ISkillProvider _skillProvider;
+        private readonly IAchievementProvider _achievementProvider;
+        private readonly IWebHostEnvironment _environment;
 
         public SkillController(
             ISkillProvider skillProvider,
             IAchievementProvider achievementProvider,
             IWebHostEnvironment environment)
         {
-            this.skillProvider = skillProvider;
-            this.achievementProvider = achievementProvider;
-            this.environment = environment;
+            _skillProvider = skillProvider;
+            _achievementProvider = achievementProvider;
+            _environment = environment;
         }
 
-        [Route("competences")]
         public async Task<IActionResult> Index()
         {
-            var skills = await skillProvider.GetSkills();
+            var skills = await _skillProvider.GetSkills();
             var viewModel = new SkillIndexViewModel
             {
-                Techincals = skills.Where(s => s.Type == SkillType.TECHNICAL),
-                Humans = skills.Where(s => s.Type == SkillType.HUMAN)
+                Techincals = skills.Where(s => s.Type == SkillType.Technical),
+                Humans = skills.Where(s => s.Type == SkillType.Human)
             };
             return View(viewModel);
         }
 
-        [Route("competences/{skillName}")]
+        [Route("{skillName}")]
         public async Task<IActionResult> Detail(string skillName)
         {
             if (string.IsNullOrEmpty(skillName)) 
                 return BadRequest("Echec lors de la récupération du nom de la compétence.");
 
-            var skills = await skillProvider.GetSkills();
-            var achievements = await achievementProvider.GetAchievements();
+            var skills = await _skillProvider.GetSkills();
+            var achievements = await _achievementProvider.GetAchievements();
             var skill = skills.SingleOrDefault(s => s.Name == skillName);
 
-            var skillType = skill.Type == SkillType.HUMAN ? "human" : "technical";
+            if (skill == null) return RedirectToAction("Error", "Home");
+            
+            var skillType = skill.Type == SkillType.Human ? "human" : "technical";
             var pathHtmlFile = Path.Combine(
-                environment.WebRootPath, 
+                _environment.WebRootPath, 
                 "articles", 
                 "skills", 
                 skillType, 

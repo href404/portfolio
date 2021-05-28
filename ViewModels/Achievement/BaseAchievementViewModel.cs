@@ -4,10 +4,13 @@
     {
         public string GetAchievementTypeIcon(Models.Achievement achievement)
         {
-            if (achievement.Type == Models.AchievementType.WEB) return "🌐";
-            if (achievement.Type == Models.AchievementType.MOBILE) return "📱";
-            if (achievement.Type == Models.AchievementType.RICH_CLIENT) return "🖥️";
-            return "🤷‍♂️";
+            return achievement.Type switch
+            {
+                Models.AchievementType.Web => "🌐",
+                Models.AchievementType.Mobile => "📱",
+                Models.AchievementType.RichClient => "🖥️",
+                _ => "🤷‍♂️"
+            };
         }
     }
 }

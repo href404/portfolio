@@ -8,42 +8,44 @@ using System.Threading.Tasks;
 
 namespace Portfolio.Controllers
 {
+    [Route("realisations")]
     public class AchievementController : Controller
     {
-        private readonly IAchievementProvider achievementProvider;
-        private readonly ISkillProvider skillProvider;
-        private readonly IWebHostEnvironment environment;
+        private readonly IAchievementProvider _achievementProvider;
+        private readonly ISkillProvider _skillProvider;
+        private readonly IWebHostEnvironment _environment;
 
         public AchievementController(
             IAchievementProvider achievementProvider,
             ISkillProvider skillProvider,
             IWebHostEnvironment environment)
         {
-            this.achievementProvider = achievementProvider;
-            this.skillProvider = skillProvider;
-            this.environment = environment;
+            _achievementProvider = achievementProvider;
+            _skillProvider = skillProvider;
+            _environment = environment;
         }
 
-        [Route("realisations")]
         public async Task<IActionResult> Index()
         {
-            var achievements = await achievementProvider.GetAchievements();
+            var achievements = await _achievementProvider.GetAchievements();
             var viewModel = new AchievementIndexViewModel { Achievements = achievements };
             return View(viewModel);
         }
 
-        [Route("realisations/{achievementName}")]
+        [Route("{achievementName}")]
         public async Task<IActionResult> Detail(string achievementName)
         {
             if (string.IsNullOrEmpty(achievementName))
                 return BadRequest("Echec lors de la récupération du nom de la réalisation.");
 
-            var achievements = await achievementProvider.GetAchievements();
-            var skills = await skillProvider.GetSkills();
+            var achievements = await _achievementProvider.GetAchievements();
+            var skills = await _skillProvider.GetSkills();
             var achievement = achievements.SingleOrDefault(a => a.Name == achievementName);
-
+            
+            if (achievement == null) return RedirectToAction("Error", "Home");
+            
             var pathHtmlFile = Path.Combine(
-                environment.WebRootPath,
+                _environment.WebRootPath,
                 "articles",
                 "achievements",
                 $"{achievement.Name}.html");

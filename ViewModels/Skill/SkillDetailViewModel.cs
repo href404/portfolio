@@ -4,14 +4,17 @@ namespace Portfolio.ViewModels.Skill
 {
     public class SkillDetailViewModel : BaseDetailViewModel
     {
-        public Models.Skill Skill { get; set; }
-        public IEnumerable<Models.Achievement> Achievements { get; set; }
+        public Models.Skill Skill { get; init; }
+        public IEnumerable<Models.Achievement> Achievements { get; init; }
 
         public string GetSkillType()
         {
-            if (Skill.Type == Models.SkillType.TECHNICAL) return "Technique";
-            if (Skill.Type == Models.SkillType.HUMAN) return "Transverse";
-            return "🤷‍♂️";
+            return Skill.Type switch
+            {
+                Models.SkillType.Technical => "Technique",
+                Models.SkillType.Human => "Transverse",
+                _ => "🤷‍♂️"
+            };
         }
     }
 }

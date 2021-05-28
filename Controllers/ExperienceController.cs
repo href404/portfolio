@@ -2,9 +2,9 @@
 
 namespace Portfolio.Controllers
 {
+    [Route("experiences")]
     public class ExperienceController : Controller
     {
-        [Route("experiences")]
         public IActionResult Index() => View();
     }
 }

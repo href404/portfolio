@@ -4,10 +4,4 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Providers\Mock\" />
-    <Folder Include="wwwroot\articles\achievements\" />
-    <Folder Include="wwwroot\articles\skills\technical\" />
-  </ItemGroup>
-
 </Project>

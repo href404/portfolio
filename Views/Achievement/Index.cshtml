@@ -7,11 +7,20 @@
     {
         <div class="card" key={index}>
             <div class="card-body">
-                <a asp-controller="Achievement" 
-                   asp-action="Detail" 
-                   asp-route-achievementname=@achievement.Name>
+                
+                @if (achievement.Client == "INFOMIL")
+                {
                     <h5 class="card-title">@achievement.Title</h5>
-                </a>
+                }
+                else
+                {
+                    <a asp-controller="Achievement"
+                       asp-action="Detail"
+                       asp-route-achievementname=@achievement.Name>
+                        <h5 class="card-title">@achievement.Title</h5>
+                    </a>
+                }
+                
                 <p class="card-text">@achievement.Description</p>
                 <p class="card-text"><small class="text-muted">– @achievement.Client ・ @Model.GetAchievementTypeIcon(achievement)</small></p>
             </div>

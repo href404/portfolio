@@ -4,16 +4,12 @@ namespace Portfolio.Models
 {
     public class Skill
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string Title { get; set; }
-        public SkillType Type { get; set; }
-        public IEnumerable<string> Achievements { get; set; }
+        public int Id { get; init; }
+        public string Name { get; init; }
+        public string Title { get; init; }
+        public SkillType Type { get; init; }
+        public IEnumerable<string> Achievements { get; init; }
     }
 
-    public enum SkillType
-    {
-        TECHNICAL,
-        HUMAN
-    }
+    public enum SkillType { Technical, Human }
 }

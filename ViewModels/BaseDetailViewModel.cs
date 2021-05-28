@@ -4,12 +4,12 @@ namespace Portfolio.ViewModels
 {
     public class BaseDetailViewModel
     {
-        public string PathHtmlFile { get; set; }
+        public string PathHtmlFile { get; init; }
 
         public string GetStaticHtml()
         {
             if (!File.Exists(PathHtmlFile))
-                return $"Une erreur est survenue lors de la récupération de cet article.";
+                return "Oops, cet article n'existe pas encore pour le moment.";
 
             var htmlString = File.ReadAllLines(PathHtmlFile);
             var htmlContent = string.Join(string.Empty, htmlString);
