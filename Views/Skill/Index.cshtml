@@ -8,7 +8,14 @@
         <ul>
             @foreach (var skill in Model.Techincals)
             {
-                <li><a asp-controller="Skill" asp-action="Detail" asp-route-skillname=@skill.Name>@skill.Title</a></li>
+                @if (skill.IsWritten)
+                {
+                    <li><a asp-controller="Skill" asp-action="Detail" asp-route-skillname=@skill.Name>@skill.Title</a></li>
+                }
+                else
+                {
+                    <li>@skill.Title</li>
+                }
             }
         </ul>
     </div>
@@ -17,7 +24,14 @@
         <ul>
             @foreach (var skill in Model.Humans)
             {
-                <li><a asp-controller="Skill" asp-action="Detail" asp-route-skillname=@skill.Name>@skill.Title</a></li>
+                @if (skill.IsWritten)
+                {
+                    <li><a asp-controller="Skill" asp-action="Detail" asp-route-skillname=@skill.Name>@skill.Title</a></li>
+                }
+                else
+                {
+                    <li>@skill.Title</li>
+                }
             }
         </ul>
     </div>

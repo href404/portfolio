@@ -86,7 +86,8 @@ namespace Portfolio.Providers.Implementations
                 Name = "communication",
                 Title = "Communication",
                 Type = SkillType.Human,
-                Achievements = new List<string>()
+                Achievements = new List<string>(),
+                IsWritten = true
             },
             new Skill 
             { 

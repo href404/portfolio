@@ -8,7 +8,7 @@
         <div class="card" key={index}>
             <div class="card-body">
                 
-                @if (achievement.Client == "INFOMIL")
+                @if (!achievement.IsWritten)
                 {
                     <h5 class="card-title">@achievement.Title</h5>
                 }
