@@ -54,6 +54,8 @@
 
 Excel : https://drive.google.com/file/d/1kTkU4A0smfoFB7bW65gsklTVCpU0Jqrl
 
+Illustrations :  https://storyset.com
+
 ## Inspirations
 
 Chris Horner : https://chrishorner.codes
