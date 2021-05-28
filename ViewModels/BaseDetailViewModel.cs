@@ -19,9 +19,11 @@ namespace Portfolio.ViewModels
 
         public string GetReadTime()
         {
+            const int wordsPerMinute = 100;
+            
             var content = GetStaticHtml();
             var wordsCount = content.Split(' ').Length;
-            var readtime = (wordsCount / 200).ToString("D");
+            var readtime = (wordsCount / wordsPerMinute).ToString("D");
             return readtime;
         }
 
