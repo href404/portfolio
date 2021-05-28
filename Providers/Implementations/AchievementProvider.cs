@@ -123,7 +123,7 @@ namespace Portfolio.Providers.Implementations
 
         public async Task<IEnumerable<Achievement>> GetAchievements()
         {
-            return await Task.Run(() => _achievements.Reverse());
+            return await Task.Run(() => _achievements.Where(a => a.Client != "INFOMIL").Reverse());
         }
     }
 }
