@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.HttpOverrides;
+using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Portfolio.Providers;
@@ -18,23 +20,35 @@ namespace Portfolio
 
         public static void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseForwardedHeaders(GetForwardedHeadersOptions());
+
             if (env.IsDevelopment()) app.UseDeveloperExceptionPage();
-            else
-            {
-                app.UseExceptionHandler("/Home/Error");
-                app.UseHsts();
-            }
+            else ConfigureExceptionHandler(app);
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
             app.UseRouting();
             app.UseAuthorization();
-
-            app.UseEndpoints(endpoints =>
+            app.UseEndpoints(GetEndpoints);
+        }
+        
+        private static ForwardedHeadersOptions GetForwardedHeadersOptions()
+        {
+            return new ForwardedHeadersOptions
             {
-                endpoints.MapControllerRoute("default","{controller=Home}/{action=Index}/{id?}");
-            });
+                ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
+            };
+        }
+
+        private static void ConfigureExceptionHandler(IApplicationBuilder app)
+        {
+            app.UseExceptionHandler("/Home/Error");
+            app.UseHsts();
+        }
+        
+        private static void GetEndpoints(IEndpointRouteBuilder endpoints)
+        {
+            endpoints.MapControllerRoute("default","{controller=Home}/{action=Index}/{id?}");
         }
     }
 }
