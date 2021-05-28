@@ -2,11 +2,8 @@
 
 namespace Portfolio.Models
 {
-    public class Achievement
+    public class Achievement : Article
     {
-        public int Id { get; init; }
-        public string Name { get; init; }
-        public string Title { get; init; }
         public string Description { get; init; }
         public string Client { get; init; }
         public AchievementType Type { get; init; }
