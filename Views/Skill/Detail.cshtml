@@ -2,7 +2,11 @@
 
 <h2>@Model.Skill.Title</h2>
 <span class="badge badge-primary">@Model.GetSkillType()</span>
-<small class="text-muted"> ・ @Model.GetReadTime() minutes de lecture</small>
+
+@if (Model.IsArticleExist())
+{
+    <small class="text-muted"> ・ @Model.GetReadTime() minutes de lecture</small>
+}
 
 <hr class="my-4" />
 @Html.Raw(Model.GetStaticHtml())

@@ -2,7 +2,15 @@
 
 <h2>@Model.Achievement.Title</h2>
 <span class="badge badge-primary">Réalisation</span>
-<small class="text-muted"> ・ @Model.GetReadTime() minutes de lecture  ・ @Model.GetAchievementTypeIcon(Model.Achievement)</small>
+
+@if (Model.IsArticleExist())
+{
+    <small class="text-muted"> ・ @Model.GetReadTime() minutes de lecture  ・ @Model.GetAchievementTypeIcon(Model.Achievement)</small>
+}
+else
+{
+    <small class="text-muted"> ・ @Model.GetAchievementTypeIcon(Model.Achievement)</small>
+}
 
 <hr class="my-4" />
 @Html.Raw(Model.GetStaticHtml())

@@ -54,7 +54,8 @@ namespace Portfolio.Controllers
             { 
                 Achievement = achievement, 
                 Skills = skills.Where(s => s.Achievements.Contains(achievement.Name)),
-                PathHtmlFile = pathHtmlFile 
+                PathHtmlFile = pathHtmlFile,
+                WebRootPath = _environment.WebRootPath
             };
             return View(viewModel);
         }
