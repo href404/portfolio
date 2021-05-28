@@ -58,6 +58,8 @@ Illustrations :  https://storyset.com
 
 Code couleur : #407BFF
 
+Hosting & SSL : https://www.rosehosting.com/blog/how-to-install-lets-encrypt-on-ubuntu-20-04-with-apache/
+
 ## Inspirations
 
 Chris Horner : https://chrishorner.codes
