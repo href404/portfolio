@@ -7,28 +7,28 @@
 </div>
 
 <div>
-    <p>Le but de l'application était de fournir des informations sur les producteurs et marchés dans le Lot-et-Garonne. Dans ses informations l'utilisateur devait pouvoir accéder à l'adresse pour pouvoir s'y rendre, avoir une listes des produits lorsque le producteur en commercialisé, les horaires d'ouvertures, la capacité d'hébergement, etc. Tout cela, afin d'inciter les particuliers à se rendre directement auprès des producteurs et dans les marchés qui ont du mal à renouveller leurs clientèles.</p>
+    <p>Le but de l'application était de fournir des informations sur les producteurs et marchés dans le Lot-et-Garonne. Dans ses informations l'utilisateur devait pouvoir accéder à l'adresse pour pouvoir s'y rendre, avoir une liste de produits lorsque le producteur en commercialise, les horaires d'ouvertures, la capacité d'hébergement, etc. Tout cela, afin d'inciter les particuliers à se rendre directement auprès des producteurs et dans les marchés qui ont du mal à renouveller leur clientèle.</p>
 </div>
 
 <div>
     <h4>Organisation</h4>
     <p>Nous devions rassembler plusieurs éléments avant de démarrer le développement, à savoir la source de données contenant les informations sur les producteurs et marchés (adresse, produits à la vente, etc.). </p>
     
-    <p>Nous avons décidé assez tôt dans le projet que c'est informations devront être accessible au travers d'une API qui fournirait les informations aux utilisateurs lors de l'utilisation de l'application, aussi il était important pour le client que les utilisateurs est accès aux données en mode déconnecté (limitations des connexions internet dù à la localisation des producteurs et marchés).</p>
+    <p>Nous avons décidé assez tôt dans le projet que c'est informations devront être accessible au travers d'une API qui fournirait les informations aux utilisateurs lors de l'utilisation de l'application, aussi il était important pour le client que les utilisateurs aient accès aux données en mode déconnecté (limitations des connexions internet dù à la localisation des producteurs et marchés).</p>
 
-    <p>Pour ce projet, nous nous sommes organisé en utilisant la méthode agile (SCRUM) et nous avions convenu d'un rythme au niveau des sprints de l'ordre de deux semaines afin d'avoir des points d'avancement avec la Chambre d'Agriculture.</p>
+    <p>Pour ce projet, nous nous sommes organisés en utilisant la <a href="/skills/travail_equipe">méthode agile (Scrum)</a> et nous avions convenu d'un rythme de l'ordre de deux semaines afin d'avoir des points d'avancement avec la Chambre d'Agriculture.</p>
     
-    <p>Enfin, il était important de soumettre et valider des maquettes plus au moins détaillés avec la Chambre de l'Agriculture pour être sur d'avoir la bonne vision sur le rendu final de l'application mobile. Nous avons passé environ 1 mois sur cette partie afin de s'assurer que toutes les parties prenantes soit d'accord avant le démarrage du développement.</p>
+    <p>Enfin, il était important de soumettre et valider des maquettes plus ou moins détaillées avec le client pour être sur d'avoir la bonne vision sur le rendu final de l'application mobile. Nous avons passé environ 1 mois sur cette partie afin de s'assurer que toutes les parties prenantes soient d'accord avant le démarrage du développement.</p>
 </div>
 
 <div class="row">
     <div class="col-md-6">
         <div>
             <h4>Développement</h4>
-            <p>Nous étions 5 à travailler sur le projet, ainsi nous avons procédé à un découpage des tâches et à l'évalutaion de la charge de travail de chacune. Il est ressorti de cet atelier l'organisation suivante :
+            <p>Nous étions 5 à travailler sur le projet, ainsi nous avons procédé à un découpage des tâches et à l'évaluation de la charge de travail de chacune. Il est ressorti de cet atelier l'organisation suivante :
             <ul>
                 <li>
-                    2 groupes de deux personnes responsable du développement de l'application mobile
+                    2 groupes de deux personnes responsables du développement de l'application mobile
                     <ul>
                         <li>2 personnes sur la partie UI</li>
                         <li>2 personnes sur le partie fonctionnelle</li>
@@ -38,16 +38,20 @@
             </ul>
             </p>
     
-            <p>Le défi était de ne pas perdre de temps sur l'interface de l'application mobile en ayant un maximum de personne pouvant travailler dessus et pour montrer une avancée visuelle à chaque fin de sprint au client. Nous savions à l'avance qu'il y avait des défis techniques à savoir le mode déconnecté de l'application (utilisation d'une base de données SQLite), l'hébergement de la partie serveur (pas de profils système et réseaux dans l'équipe) et enfin l'utilisation du Framework Xamarin qui était déjà prometteur à l'époque mais encore très jeune et donc peu de recul sur les problèmes rencontrés par la communautés, etc. </p>
+            <p>Le défi était de ne pas perdre de temps sur l'interface de l'application mobile, en ayant un maximum de personne pouvant travailler dessus et pour montrer une avancée visuelle à chaque fin de sprint au client.</p>
+            
+            <p>Nous savions à l'avance qu'il y aurait des défis techniques à savoir le mode déconnecté de l'application (utilisation d'une base de données SQLite), l'hébergement de la partie serveur (pas de profil système et réseaux dans l'équipe) et enfin l'utilisation du Framework Xamarin qui était déjà prometteur à l'époque, mais encore très jeune et donc peu de recul sur les problèmes rencontrés par la communauté. </p>
+        
         </div>
     
         <div>
             <h4>Retour d'expérience</h4>
-            <p>Nous n'avons pas atteindre tous les objectifs fixés en début de projet à savoir le mode déconnecté sur l'application car nous avons rencontrés beucoup de problème avec les libraires en lien avec SQLite sur Xamarin et la mise en production sur le Play Store et l'App Store qui n'ont pas pu être réalisé car du retard a été accumulé sur certains développement.</p>
+            <p>Nous n'avons pas pu atteindre tous les objectifs fixés en début de projet à savoir le mode déconnecté sur l'application car nous avons rencontrés beaucoup de problèmes avec les librairies en lien avec SQLite sur Xamarin. De plus, la mise en production sur le Play Store et l'App Store n'a pas pu être réalisée car du retard a été accumulé sur certains développements.</p>
     
-            <p>J'ai personnellement était très enthousiaste pour ce projet car j'étais déjà à l'aise avec la technologie C# et je trouvais l'idée de pouvoir travailler avec pour la réalisation d'une application mobile très intéressante. Ce projet a été un second pas dans le développement mobile pour moi après la réalisation du projet <a href="/realisations/wawee">Wawee</a> en Java, qui était plus conventionnelle à cette époque.</p>
+            <p>J'ai personnellement était très enthousiaste pour ce projet car j'étais déjà à l'aise avec la technologie
+                <a href="/competences/csharp">C#</a> et je trouvais l'idée de pouvoir travailler avec pour la réalisation d'une application mobile très intéressante. Ce projet a été un second pas dans le développement mobile pour moi après la réalisation du projet <a href="/realisations/wawee">Wawee</a> en Java, qui était plus conventionnel à cette époque.</p>
     
-            <p>Nous avons décroché la première place du forum informatique organisé par mon école à la fin du semestre, regroupant plus d'une vingtaine d'équipe avec projets tous plus intéressants les uns des autres. J'en retire toujours une certaine fierté pour mon dernier semestre avant le départ en entreprise pour le stage et l'alternance.</p>
+            <p>Nous avons décroché la première place du forum informatique organisé par mon école à la fin du semestre, regroupant plus d'une vingtaine d'équipes avec des projets tous plus intéressants les uns que les autres. J'en retire toujours une certaine fierté pour mon dernier semestre avant le départ en entreprise.</p>
         </div>
     </div>
     <div class="col-md-6">
