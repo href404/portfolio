@@ -67,7 +67,8 @@ namespace Portfolio.Providers.Implementations
                 Description = "Application Android permettant de géolocaliser les agriculteurs et marchés de la marque Bienvenue à la Ferme.", 
                 Client = "IN'TECH", 
                 Type = AchievementType.Mobile,
-                Skills = new List<string> { "xamarin", "php", "sql", "versionning", "communication" }
+                Skills = new List<string> { "xamarin", "php", "sql", "versionning", "communication" },
+                IsWritten = true
             },
             new Achievement 
             { 
