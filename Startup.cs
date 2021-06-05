@@ -1,5 +1,8 @@
+using System;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
@@ -25,13 +28,22 @@ namespace Portfolio
             if (env.IsDevelopment()) app.UseDeveloperExceptionPage();
             else ConfigureExceptionHandler(app);
 
+            app.Use(async (context, next) => await GetPageNotFoundMiddleware(context, next));
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseRouting();
             app.UseAuthorization();
             app.UseEndpoints(GetEndpoints);
         }
-        
+
+        private static async Task GetPageNotFoundMiddleware(HttpContext context, Func<Task> next)
+        {
+            await next();
+            if (context.Response.StatusCode != 404) return;
+            context.Request.Path = "/error";
+            await next();
+        }
+
         private static ForwardedHeadersOptions GetForwardedHeadersOptions()
         {
             return new ForwardedHeadersOptions
@@ -42,7 +54,7 @@ namespace Portfolio
 
         private static void ConfigureExceptionHandler(IApplicationBuilder app)
         {
-            app.UseExceptionHandler("/Home/Error");
+            app.UseExceptionHandler("/error");
             app.UseHsts();
         }
         
