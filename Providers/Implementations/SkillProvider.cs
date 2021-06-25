@@ -128,7 +128,21 @@ namespace Portfolio.Providers.Implementations
                 Name = "travail_equipe", 
                 Title = "Travail d'équipe 👨‍👩‍👧‍👦", 
                 Type = SkillType.Human,
-                Achievements = new List<string>(),
+                Achievements = new List<string> 
+                { 
+                    "bureau_etudiant_intech", 
+                    "still_english", 
+                    "upsa", 
+                    "clinique_st_hilaire", 
+                    "wawee", 
+                    "chambre_agriculture", 
+                    "recuperation_log_terminaux", 
+                    "migration_sql",
+                    "surveillance_terminaux",
+                    "lecteur_configuration",
+                    "gestion_parc_terminaux"
+                },
+                IsWritten = true,
                 IsVisible = true
             },
             new Skill 
