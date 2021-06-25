@@ -5,7 +5,8 @@
 <div class="card-columns">
     @foreach (var achievement in Model.Achievements)
     {
-        <div class="card" key={index}>
+        <div class="card">
+            <img class="card-img-top" src="~/images/@(achievement.Name).jpg" alt="Agriculture">
             <div class="card-body">
                 
                 @if (!achievement.IsWritten)
