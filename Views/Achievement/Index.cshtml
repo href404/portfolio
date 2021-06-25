@@ -6,7 +6,7 @@
     @foreach (var achievement in Model.Achievements)
     {
         <div class="card">
-            <img class="card-img-top" src="~/images/@(achievement.Name).jpg" alt="Agriculture">
+            <img class="card-img-top" src="~/images/@(achievement.Name).jpg" alt="@achievement.Title">
             <div class="card-body">
                 
                 @if (!achievement.IsWritten)
