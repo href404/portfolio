@@ -78,6 +78,7 @@ namespace Portfolio.Providers.Implementations
                 Title = "SQL 📊",
                 Type = SkillType.Technical,
                 Achievements = new List<string> { "gestion_parc_terminaux", "migration_sql", "recuperation_log_terminaux", "chambre_agriculture", "wawee", "clinique_st_hilaire", "upsa", "still_english" },
+                IsWritten = true,
                 IsVisible = true
             },
             new Skill
