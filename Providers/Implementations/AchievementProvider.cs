@@ -14,7 +14,7 @@ namespace Portfolio.Providers.Implementations
                 Id = 1, 
                 Name = "bureau_etudiant_intech", 
                 Title = "Bureau des étudiants d'IN'TECH", 
-                Description = "Application web permettant aux adhérents du bureau des étudiants d'IN'TECH de partager des les futurs événement et informations du campus.", 
+                Description = "Application web permettant aux adhérents du bureau des étudiants d'IN'TECH de partager leurs futurs événement et informations du campus.", 
                 Client = "IN'TECH", 
                 Type = AchievementType.Web,
                 Skills = new List<string> { "javascript", "communication" }
