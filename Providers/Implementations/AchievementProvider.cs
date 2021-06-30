@@ -13,7 +13,7 @@ namespace Portfolio.Providers.Implementations
             { 
                 Id = 1, 
                 Name = "bureau_etudiant_intech", 
-                Title = "Bureau des étudiants d'IN'TECH", 
+                Title = "Web Archi'Techs", 
                 Description = "Application web permettant aux adhérents du bureau des étudiants d'IN'TECH de partager leurs futurs événement et informations du campus.", 
                 Client = "IN'TECH", 
                 Type = AchievementType.Web,
@@ -23,7 +23,7 @@ namespace Portfolio.Providers.Implementations
             { 
                 Id = 2, 
                 Name = "still_english", 
-                Title = "Jeu Still English", 
+                Title = "In'English", 
                 Description = "Application web permettant de jouer au jeu de plateau Still English dans une version numérique.", 
                 Client = "IN'TECH", 
                 Type = AchievementType.Web,
@@ -33,7 +33,7 @@ namespace Portfolio.Providers.Implementations
             { 
                 Id = 3, 
                 Name = "upsa", 
-                Title = "Gestionnaire de fichier pour UPSA", 
+                Title = "SR'ALGAN", 
                 Description = "Application web permettant à UPSA de partager leurs fichiers.", 
                 Client = "IN'TECH", 
                 Type = AchievementType.Web,
@@ -43,7 +43,7 @@ namespace Portfolio.Providers.Implementations
             { 
                 Id = 4, 
                 Name = "clinique_st_hilaire", 
-                Title = "Résérvation pour les médecins de la Clinique Esquirol Saint Hilaire", 
+                Title = "Doctors' Papers", 
                 Description = "Application web permettant aux médecins, le suivi des patients à distance.", 
                 Client = "IN'TECH", 
                 Type = AchievementType.Web,
@@ -53,7 +53,7 @@ namespace Portfolio.Providers.Implementations
             { 
                 Id = 5, 
                 Name = "wawee", 
-                Title = "Application mobile pour Wawee", 
+                Title = "Wawee", 
                 Description = "Application Android permettant la création et le partage d'événement.", 
                 Client = "IN'TECH", 
                 Type = AchievementType.Mobile,
@@ -63,7 +63,7 @@ namespace Portfolio.Providers.Implementations
             { 
                 Id = 6, 
                 Name = "chambre_agriculture", 
-                Title = "Application mobile pour la Chambre de l'Agriculture", 
+                Title = "MobiFarm", 
                 Description = "Application Android permettant de géolocaliser les agriculteurs et marchés de la marque Bienvenue à la Ferme.", 
                 Client = "IN'TECH", 
                 Type = AchievementType.Mobile,
