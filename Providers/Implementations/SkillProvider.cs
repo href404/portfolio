@@ -45,7 +45,8 @@ namespace Portfolio.Providers.Implementations
                 Title = "JavaScript",
                 Type = SkillType.Technical,
                 Achievements = new List<string> { "gestion_parc_terminaux", "lecteur_configuration", "clinique_st_hilaire", "upsa", "still_english", "bureau_etudiant_intech" },
-                IsVisible = true
+                IsVisible = true,
+                IsWritten = true
             },
             new Skill
             {
