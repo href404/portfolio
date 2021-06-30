@@ -56,17 +56,8 @@ Excel : https://drive.google.com/file/d/1kTkU4A0smfoFB7bW65gsklTVCpU0Jqrl
 
 Illustrations :  https://storyset.com
 
-Code couleur : #407BFF
-
 Hosting & SSL : https://www.rosehosting.com/blog/how-to-install-lets-encrypt-on-ubuntu-20-04-with-apache/
 
 ## Inspirations
 
 Chris Horner : https://chrishorner.codes
-
-## Commandes
-
-dotnet publish --configuration Release
-sudo systemctl restart portfolio.service
-sudo nano /etc/systemd/system/portfolio.service
-sudo service apache2 restart
