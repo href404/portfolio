@@ -36,7 +36,8 @@ namespace Portfolio.Providers.Implementations
                 Title = "Xamarin",
                 Type = SkillType.Technical,
                 Achievements = new List<string> { "chambre_agriculture" },
-                IsVisible = true
+                IsVisible = true,
+                IsWritten = true
             },
             new Skill
             {
