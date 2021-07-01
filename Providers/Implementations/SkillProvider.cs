@@ -27,7 +27,8 @@ namespace Portfolio.Providers.Implementations
                 Title = "Android",
                 Type = SkillType.Technical,
                 Achievements = new List<string> { "surveillance_terminaux", "lecteur_configuration", "wawee" },
-                IsVisible = true
+                IsVisible = true,
+                IsWritten = true
             },
             new Skill
             {
