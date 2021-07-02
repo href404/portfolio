@@ -22,17 +22,26 @@
         <div class="navbar-collapse collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item">
-                    <a class="@Html.IsActive("Skill", "Index")"
+                    <a class="@Html.IsElementActive(
+                                  "Skill", 
+                                  "Index",
+                                  "nav-link")"
                        asp-controller="Skill"
                        asp-action="Index">Compétences</a>
                 </li>
                 <li class="nav-item">
-                    <a class="@Html.IsActive("Achievement", "Index")"
+                    <a class="@Html.IsElementActive(
+                                  "Achievement", 
+                                  "Index",
+                                  "nav-link")"
                        asp-controller="Achievement"
                        asp-action="Index">Réalisations</a>
                 </li>
                 <li class="nav-item">
-                    <a class="@Html.IsActive("Experience", "Index")"
+                    <a class="@Html.IsElementActive(
+                                  "Experience", 
+                                  "Index",
+                                  "nav-link")"
                        asp-controller="Experience"
                        asp-action="Index">Expériences</a>
                 </li>
@@ -41,7 +50,10 @@
                 </li>
             </ul>
             <ul class="navbar-nav my-2 my-lg-0">
-                <a class="btn btn-outline-success my-2 my-sm-0" 
+                <a class="@Html.IsElementActive(
+                              "Contact", 
+                              "Index", 
+                              "btn btn-outline-success my-2 my-sm-0")" 
                    asp-controller="Contact" 
                    asp-action="Index" 
                    role="button">Contactez-moi</a>
