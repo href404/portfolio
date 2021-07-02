@@ -13,14 +13,14 @@
 </head>
 <body class="bg-light">
 
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Pierre Julien</a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i>
         </button>
         <div class="navbar-collapse collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item">
                     <a class="@Html.IsActive("Skill", "Index")"
                        asp-controller="Skill"
@@ -39,6 +39,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="~/docs/cv.pdf" download="CV_PIERRE_JULIEN">Curriculum vitæ</a>
                 </li>
+            </ul>
+            <ul class="navbar-nav my-2 my-lg-0">
+                <button class="btn btn-outline-success my-2 my-sm-0">Contactez-moi</button>
             </ul>
         </div>
     </nav>
