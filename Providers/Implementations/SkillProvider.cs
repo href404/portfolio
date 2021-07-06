@@ -18,7 +18,8 @@ namespace Portfolio.Providers.Implementations
                 Title = "C#",
                 Type = SkillType.Technical,
                 Achievements = new List<string> { "recuperation_log_terminaux", "migration_sql", "surveillance_terminaux", "gestion_parc_terminaux", "chambre_agriculture" },
-                IsVisible = true
+                IsVisible = true,
+                IsWritten = true
             },
             new Skill
             {
