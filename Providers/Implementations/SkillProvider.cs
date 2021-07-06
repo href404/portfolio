@@ -91,7 +91,8 @@ namespace Portfolio.Providers.Implementations
                 Title = "Versionning 🗄",
                 Type = SkillType.Technical,
                 Achievements = new List<string> { "gestion_parc_terminaux", "migration_sql", "recuperation_log_terminaux", "chambre_agriculture", "wawee", "clinique_st_hilaire", "upsa", "still_english", "bureau_etudiant_intech" },
-                IsVisible = true
+                IsVisible = true,
+                IsWritten = true
             },
             new Skill
             {
