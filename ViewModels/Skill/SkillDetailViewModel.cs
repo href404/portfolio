@@ -5,6 +5,7 @@ namespace Portfolio.ViewModels.Skill
 {
     public class SkillDetailViewModel : BaseDetailViewModel
     {
+        private const int MAX_STARS = 5;
         public Models.Skill Skill { get; init; }
         public IEnumerable<Models.Achievement> Achievements { get; init; }
 
@@ -18,8 +19,8 @@ namespace Portfolio.ViewModels.Skill
             };
         }
 
-        public int GetLevelRounded() => Convert.ToInt32(Skill.Level);
+        public int GetLevelRounded() => Convert.ToInt32(Math.Floor(Skill.Level));
         public bool IsLevelDecimal() => Skill.Level % 1 != 0;
-        public int GetEmptyStarsCount() => Skill.Level > 4 ? 0 : 5 - GetLevelRounded();
+        public int GetEmptyStarsCount() => Convert.ToInt32(Math.Floor(MAX_STARS - Skill.Level));
     }
 }
