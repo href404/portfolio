@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Portfolio.ViewModels.Skill
 {
@@ -16,5 +17,9 @@ namespace Portfolio.ViewModels.Skill
                 _ => "🤷‍♂️"
             };
         }
+
+        public int GetLevelRounded() => Convert.ToInt32(Skill.Level);
+        public bool IsLevelDecimal() => Skill.Level % 1 != 0;
+        public int GetEmptyStarsCount() => Skill.Level > 4 ? 0 : 5 - GetLevelRounded();
     }
 }

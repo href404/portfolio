@@ -17,6 +17,7 @@ namespace Portfolio.Providers.Implementations
                 Name = "csharp",
                 Title = "C#",
                 Type = SkillType.Technical,
+                Level = 4.5,
                 Achievements = new List<string> { "recuperation_log_terminaux", "migration_sql", "surveillance_terminaux", "gestion_parc_terminaux", "chambre_agriculture" },
                 IsVisible = true,
                 IsWritten = true
@@ -27,6 +28,7 @@ namespace Portfolio.Providers.Implementations
                 Name = "android",
                 Title = "Android",
                 Type = SkillType.Technical,
+                Level = 4,
                 Achievements = new List<string> { "surveillance_terminaux", "lecteur_configuration", "wawee" },
                 IsVisible = true,
                 IsWritten = true
@@ -37,6 +39,7 @@ namespace Portfolio.Providers.Implementations
                 Name = "xamarin",
                 Title = "Xamarin",
                 Type = SkillType.Technical,
+                Level = 3,
                 Achievements = new List<string> { "chambre_agriculture" },
                 IsVisible = true,
                 IsWritten = true
@@ -47,6 +50,7 @@ namespace Portfolio.Providers.Implementations
                 Name = "javascript",
                 Title = "JavaScript",
                 Type = SkillType.Technical,
+                Level = 3,
                 Achievements = new List<string> { "gestion_parc_terminaux", "lecteur_configuration", "clinique_st_hilaire", "upsa", "still_english", "bureau_etudiant_intech" },
                 IsVisible = true,
                 IsWritten = true
@@ -57,6 +61,7 @@ namespace Portfolio.Providers.Implementations
                 Name = "docker",
                 Title = "Docker 🐋",
                 Type = SkillType.Technical,
+                Level = 2,
                 Achievements = new List<string> { "lecteur_configuration" }
             },
             new Skill
@@ -65,6 +70,7 @@ namespace Portfolio.Providers.Implementations
                 Name = "bash",
                 Title = "Bash",
                 Type = SkillType.Technical,
+                Level = 2,
                 Achievements = new List<string> { "lecteur_configuration" }
             },
             new Skill
@@ -73,6 +79,7 @@ namespace Portfolio.Providers.Implementations
                 Name = "php",
                 Title = "PHP",
                 Type = SkillType.Technical,
+                Level = 2.5,
                 Achievements = new List<string> { "still_english", "upsa", "clinique_st_hilaire", "wawee" }
             },
             new Skill
@@ -81,6 +88,7 @@ namespace Portfolio.Providers.Implementations
                 Name = "sql",
                 Title = "SQL 📊",
                 Type = SkillType.Technical,
+                Level = 4,
                 Achievements = new List<string> { "gestion_parc_terminaux", "migration_sql", "recuperation_log_terminaux", "chambre_agriculture", "wawee", "clinique_st_hilaire", "upsa", "still_english" },
                 IsWritten = true,
                 IsVisible = true
@@ -91,6 +99,7 @@ namespace Portfolio.Providers.Implementations
                 Name = "versionning",
                 Title = "Versionning 🗄",
                 Type = SkillType.Technical,
+                Level = 4.5,
                 Achievements = new List<string> { "gestion_parc_terminaux", "migration_sql", "recuperation_log_terminaux", "chambre_agriculture", "wawee", "clinique_st_hilaire", "upsa", "still_english", "bureau_etudiant_intech" },
                 IsVisible = true,
                 IsWritten = true
@@ -101,6 +110,7 @@ namespace Portfolio.Providers.Implementations
                 Name = "communication",
                 Title = "Communication",
                 Type = SkillType.Human,
+                Level = 4,
                 Achievements = new List<string> 
                 { 
                     "bureau_etudiant_intech", 
@@ -124,6 +134,7 @@ namespace Portfolio.Providers.Implementations
                 Name = "contact_client", 
                 Title = "Contact client", 
                 Type = SkillType.Human,
+                Level = 3,
                 Achievements = new List<string>(),
                 IsVisible = true
             },
@@ -133,6 +144,7 @@ namespace Portfolio.Providers.Implementations
                 Name = "travail_equipe", 
                 Title = "Travail d'équipe 👨‍👩‍👧‍👦", 
                 Type = SkillType.Human,
+                Level = 4,
                 Achievements = new List<string> 
                 { 
                     "bureau_etudiant_intech", 
@@ -156,6 +168,7 @@ namespace Portfolio.Providers.Implementations
                 Name = "formation", 
                 Title = "Formation", 
                 Type = SkillType.Human,
+                Level = 2.5,
                 Achievements = new List<string>()
             },
             new Skill 
@@ -164,6 +177,7 @@ namespace Portfolio.Providers.Implementations
                 Name = "montage_video", 
                 Title = "Montage vidéo", 
                 Type = SkillType.Human,
+                Level = 3.5,
                 Achievements = new List<string>(),
                 IsVisible = true
             },
@@ -173,6 +187,7 @@ namespace Portfolio.Providers.Implementations
                 Name = "gestion_budget", 
                 Title = "Gestion de budget", 
                 Type = SkillType.Human,
+                Level = 2,
                 Achievements = new List<string>()
             },
         };

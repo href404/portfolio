@@ -1,12 +1,29 @@
 ﻿@model Portfolio.ViewModels.Skill.SkillDetailViewModel
 
 <h2>@Model.Skill.Title</h2>
+<div class="d-flex align-items-center">
+    
 <span class="badge badge-primary">@Model.GetSkillType()</span>
 
 @if (Model.IsArticleExist())
 {
-    <small class="text-muted"> ・ @Model.GetReadTime() minutes de lecture</small>
+    <small class="text-muted ml-1"> ・ @Model.GetReadTime() minutes de lecture ・ </small>
+    <div class="d-flex ml-1">
+        @for (var i = 0; i < Model.GetLevelRounded(); i++)
+        {
+            <i class="fas fa-star"></i>
+        }
+        @if (Model.IsLevelDecimal())
+        {
+            <i class="fas fa-star-half-alt"></i>
+        }
+        @for (var i = 0; i < Model.GetEmptyStarsCount(); i++)
+        {
+            <i class="far fa-star"></i>
+        }
+    </div>
 }
+</div>
 
 <hr class="my-4" />
 @Html.Raw(Model.GetStaticHtml())
