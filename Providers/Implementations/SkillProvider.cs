@@ -178,7 +178,7 @@ namespace Portfolio.Providers.Implementations
                 Title = "Montage vidéo", 
                 Type = SkillType.Human,
                 Level = 3.5,
-                Achievements = new List<string>(),
+                Achievements = new List<string> { "wawee" },
                 IsVisible = true,
                 IsWritten = true
             },

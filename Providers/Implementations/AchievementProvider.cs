@@ -57,7 +57,7 @@ namespace Portfolio.Providers.Implementations
                 Description = "Application Android permettant la création et le partage d'événement.", 
                 Client = "IN'TECH", 
                 Type = AchievementType.Mobile,
-                Skills = new List<string> { "android", "php", "sql", "versionning", "communication", "travail_equipe" }
+                Skills = new List<string> { "android", "php", "sql", "versionning", "communication", "travail_equipe", "montage_video" }
             },
             new Achievement 
             { 
