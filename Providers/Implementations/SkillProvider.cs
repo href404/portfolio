@@ -179,7 +179,8 @@ namespace Portfolio.Providers.Implementations
                 Type = SkillType.Human,
                 Level = 3.5,
                 Achievements = new List<string>(),
-                IsVisible = true
+                IsVisible = true,
+                IsWritten = true
             },
             new Skill 
             { 
