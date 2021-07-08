@@ -17,7 +17,8 @@ namespace Portfolio.Providers.Implementations
                 Description = "Application web permettant aux adhérents du bureau des étudiants d'IN'TECH de partager leurs futurs événement et informations du campus.", 
                 Client = "IN'TECH", 
                 Type = AchievementType.Web,
-                Skills = new List<string> { "javascript", "communication", "travail_equipe" }
+                Skills = new List<string> { "javascript", "communication", "travail_equipe" },
+                IsWritten = true
             },
             new Achievement 
             { 
