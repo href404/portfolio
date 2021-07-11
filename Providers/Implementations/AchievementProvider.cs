@@ -18,6 +18,7 @@ namespace Portfolio.Providers.Implementations
                 Client = "IN'TECH", 
                 Type = AchievementType.Web,
                 Skills = new List<string> { "javascript", "communication", "travail_equipe" },
+                IsVisible = true,
                 IsWritten = true
             },
             new Achievement 
@@ -28,7 +29,8 @@ namespace Portfolio.Providers.Implementations
                 Description = "Application web permettant de jouer au jeu de plateau Still English dans une version numérique.", 
                 Client = "IN'TECH", 
                 Type = AchievementType.Web,
-                Skills = new List<string> { "php", "javascript", "sql", "versionning", "communication", "travail_equipe" }
+                Skills = new List<string> { "php", "javascript", "sql", "versionning", "communication", "travail_equipe" },
+                IsVisible = true
             },
             new Achievement 
             { 
@@ -48,7 +50,8 @@ namespace Portfolio.Providers.Implementations
                 Description = "Application web permettant aux médecins, le suivi des patients à distance.", 
                 Client = "IN'TECH", 
                 Type = AchievementType.Web,
-                Skills = new List<string> { "php", "javascript", "sql", "versionning", "communication", "travail_equipe" }
+                Skills = new List<string> { "php", "javascript", "sql", "versionning", "communication", "travail_equipe" },
+                IsVisible = true
             },
             new Achievement 
             { 
@@ -58,7 +61,8 @@ namespace Portfolio.Providers.Implementations
                 Description = "Application Android permettant la création et le partage d'événement.", 
                 Client = "IN'TECH", 
                 Type = AchievementType.Mobile,
-                Skills = new List<string> { "android", "php", "sql", "versionning", "communication", "travail_equipe", "montage_video" }
+                Skills = new List<string> { "android", "php", "sql", "versionning", "communication", "travail_equipe", "montage_video" },
+                IsVisible = true
             },
             new Achievement 
             { 
@@ -69,7 +73,8 @@ namespace Portfolio.Providers.Implementations
                 Client = "IN'TECH", 
                 Type = AchievementType.Mobile,
                 Skills = new List<string> { "xamarin", "php", "sql", "csharp", "versionning", "communication", "travail_equipe" },
-                IsWritten = true
+                IsWritten = true,
+                IsVisible = true
             },
             new Achievement 
             { 
@@ -125,7 +130,7 @@ namespace Portfolio.Providers.Implementations
 
         public async Task<IEnumerable<Achievement>> GetAchievements()
         {
-            return await Task.Run(() => _achievements.Where(a => a.Client != "INFOMIL").Reverse());
+            return await Task.Run(() => _achievements.Where(a => a.Client != "INFOMIL" && a.IsVisible).Reverse());
         }
     }
 }
