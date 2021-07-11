@@ -64,7 +64,8 @@ namespace Portfolio.Providers.Implementations
                 Client = "IN'TECH", 
                 Type = AchievementType.Mobile,
                 Skills = new List<string> { "android", "php", "sql", "versionning", "communication", "travail_equipe", "montage_video" },
-                IsVisible = true
+                IsVisible = true,
+                IsWritten = true
             },
             new Achievement 
             { 
