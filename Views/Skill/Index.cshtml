@@ -1,38 +1,68 @@
 ﻿@model Portfolio.ViewModels.Skill.SkillIndexViewModel
 
-<h2>Compétences <span role="img" aria-label="competences">🏔️</span></h2>
+<h2>Compétences techniques <span role="img" aria-label="competences">💾️</span></h2>
 <hr class="my-4" />
-<div class="row">
-    <div class="col-md-6">
-        <h5>Techniques <span role="img" aria-label="competences-techniques">📁</span></h5>
-        <ul>
-            @foreach (var skill in Model.Techincals)
-            {
+<div class="card-columns">
+    @foreach (var skill in Model.Technicals.OrderByDescending(s => s.Level))
+    {
+        <div class="card">
+            <img class="card-img-top" src="~/images/@(skill.Name).jpg" alt="@skill.Title">
+            <div class="card-body">
                 @if (skill.IsWritten)
                 {
-                    <li><a asp-controller="Skill" asp-action="Detail" asp-route-skillname=@skill.Name>@skill.Title</a></li>
+                    <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 12px">
+                        <a asp-controller="Skill"
+                           asp-action="Detail"
+                           asp-route-skillname=@skill.Name>
+                            <h5 class="m-0">@skill.Title</h5>
+                        </a>
+                        <div class="d-flex ml-1">
+                            @for (var i = 0; i < Model.GetLevelRounded(skill); i++) { <i class="fas fa-star"></i> }
+                            @if (Model.IsLevelDecimal(skill)) { <i class="fas fa-star-half-alt"></i> }
+                            @for (var i = 0; i < Model.GetEmptyStarsCount(skill); i++) { <i class="far fa-star"></i> }
+                        </div>
+                    </div>
+                    <p class="card-text">@skill.Description</p>
                 }
                 else
                 {
-                    <li>@skill.Title</li>
+                    <h5 class="card-title">@skill.Title</h5>
                 }
-            }
-        </ul>
-    </div>
-    <div class="col-md-6">
-        <h5>Transverses <span role="img" aria-label="competences-transverses">📁</span></h5>
-        <ul>
-            @foreach (var skill in Model.Humans)
-            {
+            </div>
+        </div>
+    }
+</div>
+
+<h2 class="mt-5">Compétences transverses <span role="img" aria-label="competences">🏔️</span></h2>
+<hr class="my-4" />
+<div class="card-columns">
+    @foreach (var skill in Model.Humans.OrderByDescending(s => s.Level))
+    {
+        <div class="card">
+            <img class="card-img-top" src="~/images/@(skill.Name).jpg" alt="@skill.Title">
+            <div class="card-body">
                 @if (skill.IsWritten)
                 {
-                    <li><a asp-controller="Skill" asp-action="Detail" asp-route-skillname=@skill.Name>@skill.Title</a></li>
+                    <a asp-controller="Skill"
+                       asp-action="Detail"
+                       asp-route-skillname=@skill.Name>
+                        <h5 class="card-title">@skill.Title</h5>
+                    </a>
+                    <div class="d-flex align-items-center justify-content-between" style="margin-bottom: 12px">
+                        <span class="badge badge-primary">@Model.GetSkillType(skill)</span>
+                        <div class="d-flex ml-1">
+                            @for (var i = 0; i < Model.GetLevelRounded(skill); i++) { <i class="fas fa-star"></i> }
+                            @if (Model.IsLevelDecimal(skill)) { <i class="fas fa-star-half-alt"></i> }
+                            @for (var i = 0; i < Model.GetEmptyStarsCount(skill); i++) { <i class="far fa-star"></i> }
+                        </div>
+                    </div>
+                    <p class="card-text">@skill.Description</p>
                 }
                 else
                 {
-                    <li>@skill.Title</li>
+                    <h5 class="card-title">@skill.Title</h5>
                 }
-            }
-        </ul>
-    </div>
+            </div>
+        </div>
+    }
 </div>

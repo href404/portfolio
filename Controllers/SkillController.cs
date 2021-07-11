@@ -31,7 +31,7 @@ namespace Portfolio.Controllers
             var skills = await _skillProvider.GetSkills();
             var viewModel = new SkillIndexViewModel
             {
-                Techincals = skills.Where(s => s.Type == SkillType.Technical),
+                Technicals = skills.Where(s => s.Type == SkillType.Technical),
                 Humans = skills.Where(s => s.Type == SkillType.Human)
             };
             return View(viewModel);

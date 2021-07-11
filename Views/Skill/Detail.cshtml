@@ -2,14 +2,14 @@
 
 <h2>@Model.Skill.Title</h2>
 <div class="d-flex align-items-center">
-    <span class="badge badge-primary">@Model.GetSkillType()</span>
+    <span class="badge badge-primary">@Model.GetSkillType(Model.Skill)</span>
     @if (Model.IsArticleExist())
     {
         <small class="text-muted ml-1"> ・ @Model.GetReadTime() minutes de lecture ・ </small>
         <div class="d-flex ml-1">
-            @for (var i = 0; i < Model.GetLevelRounded(); i++) { <i class="fas fa-star"></i> }
-            @if (Model.IsLevelDecimal()) { <i class="fas fa-star-half-alt"></i> }
-            @for (var i = 0; i < Model.GetEmptyStarsCount(); i++) { <i class="far fa-star"></i> }
+            @for (var i = 0; i < Model.GetLevelRounded(Model.Skill); i++) { <i class="fas fa-star"></i> }
+            @if (Model.IsLevelDecimal(Model.Skill)) { <i class="fas fa-star-half-alt"></i> }
+            @for (var i = 0; i < Model.GetEmptyStarsCount(Model.Skill); i++) { <i class="far fa-star"></i> }
         </div>
     }
 </div>
