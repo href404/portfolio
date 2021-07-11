@@ -52,7 +52,8 @@ namespace Portfolio.Providers.Implementations
                 Client = "IN'TECH", 
                 Type = AchievementType.Web,
                 Skills = new List<string> { "php", "javascript", "sql", "versionning", "communication", "travail_equipe" },
-                IsVisible = true
+                IsVisible = true,
+                IsWritten = true
             },
             new Achievement 
             { 
