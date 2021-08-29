@@ -73,11 +73,6 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0 0 20px 0;
 }
 
-::-webkit-selection {
-  color: #fff;
-  background: #FF9000;
-}
-
 ::-moz-selection {
   color: #fff;
   background: #FF9000;
@@ -1312,4 +1307,78 @@ input[type="text"] {
   .nav-controller {
     display: none;
   }
+}
+
+/* Images background en CSS */
+
+#fh5co-header {
+  background-image:url("../images/nielsen-ramon-okvqMfl78YE-unsplash.jpg");
+}
+
+#profile-thumb {
+  background: url("../images/profile-pic.jpeg");
+}
+
+#work-chambre_agriculture {
+  background-image: url("../images/chambre_agriculture.jpg");
+}
+
+#work-wawee {
+  background-image: url("../images/wawee.jpg");
+}
+
+#work-clinique_st_hilaire {
+  background-image: url("../images/clinique_st_hilaire.jpg");
+}
+
+#work-still_english {
+  background-image: url("../images/still_english.jpg");
+}
+
+#work-bureau_etudiant_intech {
+  background-image: url("../images/bureau_etudiant_intech.jpg");
+}
+
+#skill-csharp {
+  background-image: url("../images/csharp.jpg");
+}
+
+#skill-versionning {
+  background-image: url("../images/versionning.jpg");
+}
+
+#skill-android {
+  background-image: url("../images/android.jpg");
+}
+
+#skill-sql {
+  background-image: url("../images/sql.jpg");
+}
+
+#skill-xamarin {
+  background-image: url("../images/xamarin.jpg");
+}
+
+#skill-javascript {
+  background-image: url("../images/javascript.jpg");
+}
+
+#skill-communication {
+  background-image: url("../images/communication.jpg");
+}
+
+#skill-travail_equipe {
+  background-image: url("../images/travail_equipe.jpg");
+}
+
+#skill-montage_video {
+  background-image: url("../images/montage_video.jpg");
+}
+
+#skill-contact_client {
+  background-image: url("../images/contact_client.jpg");
+}
+
+#contact-img {
+  background-image: url("../images/contact.jpg");
 }

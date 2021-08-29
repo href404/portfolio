@@ -5,26 +5,24 @@
     <a href="#fh5co-skills">Compétences</a>
 </div>
 
-<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner"
-    style="background-image:url(images/nielsen-ramon-okvqMfl78YE-unsplash.jpg);"
-    data-stellar-background-ratio="0.5">
+<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2 text-center">
                 <div class="display-t js-fullheight">
                     <div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-                        <div class="profile-thumb" style="background: url(images/profile-pic.jpeg);"></div>
+                        <div class="profile-thumb" id="profile-thumb"></div>
                         <h1><span>Pierre Julien</span></h1>
                         <h3><span>Ingénieur logiciel</span></h3>
-                        <p>
+                        <p></p>
                         <ul class="fh5co-social-icons">
                             <li><a href="https://twitter.com/href404" target="_blank"><i
                                         class="icon-twitter2"></i></a></li>
                             <li><a href="https://linkedin.com/in/pierre-julien" target="_blank"><i
                                         class="icon-linkedin2"></i></a></li>
                         </ul>
-                        </p>
+                        <p></p>
                     </div>
                 </div>
             </div>
@@ -50,7 +48,7 @@
                     <li><a href="https://twitter.com/href404" target="_blank"><i class="icon-twitter2"></i></a></li>
                     <li><a href="https://linkedin.com/in/pierre-julien" target="_blank"><i class="icon-linkedin2"></i></a></li>
                 </ul>
-                </p>
+                <p></p>
             </div>
         </div>
     </div>
@@ -81,7 +79,9 @@
                             <div class="timeline-body">
                                 <p>
                                     Je continue mon cursus dans la même entreprise ainsi que dans la même équipe.
-                                    <a href="/experiences/alternance">En savoir plus</a>
+                                    <a asp-controller="Experience" 
+                                       asp-action="Detail" 
+                                       asp-route-experienceName="infomil-alternance">En savoir plus</a>
                                 </p>
                             </div>
                         </div>
@@ -96,7 +96,9 @@
                             <div class="timeline-body">
                                 <p>
                                     SS2I Toulousaine, j’ai intégré le pôle étude et développement durant un stage de 6 mois.
-                                    <a href="/experiences/infomil-stage">En savoir plus</a>
+                                    <a asp-controller="Experience" 
+                                       asp-action="Detail" 
+                                       asp-route-experienceName="infomil-stage">En savoir plus</a>
                                 </p>
                             </div>
                         </div>
@@ -117,7 +119,9 @@
                             <div class="timeline-body">
                                 <p>
                                     Suite à mon stage de 6 mois en entreprise et aux compétences acquises durant les 2 ans et demi passés à l'école IN'TECH Sud.
-                                    <a href="/experiences/bachelor-informatique">En savoir plus</a>
+                                    <a asp-controller="Experience" 
+                                       asp-action="Detail" 
+                                       asp-route-experienceName="bachelor-informatique">En savoir plus</a>
                                 </p>
                             </div>
                         </div>
@@ -132,7 +136,9 @@
                             <div class="timeline-body">
                                 <p>
                                     Je rejoins l'école INTECH Sud qui m'a permis de faire mes premiers pas dans l'informatique.
-                                    <a href="/experiences/intech-sud">En savoir plus</a>
+                                    <a asp-controller="Experience"
+                                       asp-action="Detail" 
+                                       asp-route-experienceName="intech-sud">En savoir plus</a>
                                 </p>
                             </div>
                         </div>
@@ -147,7 +153,9 @@
                             <div class="timeline-body">
                                 <p>
                                     Après des problèmes de santé qui ont intérommpu mes études, le CFA de Marmande m'a permis de me relancer via une alterance dans le commerce.
-                                    <a href="/experiences/bac-pro">En savoir plus</a>
+                                    <a asp-controller="Experience"
+                                       asp-action="Detail" 
+                                       asp-route-experienceName="bac-pro">En savoir plus</a>
                                 </p>
                             </div>
                         </div>
@@ -167,7 +175,11 @@
         </div>
         <div class="row">
             <div class="col-md-4 text-center col-padding animate-box">
-                <a href="/realisations/chambre_agriculture" class="work" style="background-image: url(images/chambre_agriculture.jpg);">
+                <a asp-controller="Achievement" 
+                   asp-action="Detail" 
+                   asp-route-achievementName="chambre_agriculture" 
+                   class="work" 
+                   id="work-chambre_agriculture">
                     <div class="desc">
                         <h3>MobiFarm</h3>
                         <span>Application mobile</span>
@@ -175,7 +187,11 @@
                 </a>
             </div>
             <div class="col-md-4 text-center col-padding animate-box">
-                <a href="/realisations/wawee" class="work" style="background-image: url(images/wawee.jpg);">
+                <a asp-controller="Achievement" 
+                   asp-action="Detail" 
+                   asp-route-achievementName="wawee" 
+                   class="work" 
+                   id="work-wawee">
                     <div class="desc">
                         <h3>Wawee</h3>
                         <span>Application mobile</span>
@@ -183,7 +199,11 @@
                 </a>
             </div>
             <div class="col-md-4 text-center col-padding animate-box">
-                <a href="/realisations/clinique_st_hilaire" class="work" style="background-image: url(images/clinique_st_hilaire.jpg);">
+                <a asp-controller="Achievement" 
+                   asp-action="Detail" 
+                   asp-route-achievementName="clinique_st_hilaire" 
+                   class="work"
+                   id="work-clinique_st_hilaire">
                     <div class="desc">
                         <h3>Doctors' Papers</h3>
                         <span>Site internet</span>
@@ -191,7 +211,11 @@
                 </a>
             </div>
             <div class="col-md-6 text-center col-padding animate-box">
-                <a href="/realisations/still_english" class="work" style="background-image: url(images/still_english.jpg);">
+                <a asp-controller="Achievement"
+                   asp-action="Detail"
+                   asp-route-achievementName="still_english"
+                   class="work"
+                   id="work-still_english">
                     <div class="desc">
                         <h3>In'English</h3>
                         <span>Site internet</span>
@@ -199,7 +223,11 @@
                 </a>
             </div>
             <div class="col-md-6 text-center col-padding animate-box">
-                <a href="/realisations/bureau_etudiant_intech" class="work" style="background-image: url(images/bureau_etudiant_intech.jpg);">
+                <a asp-controller="Achievement"
+                   asp-action="Detail"
+                   asp-route-achievementName="bureau_etudiant_intech" 
+                   class="work" 
+                   id="work-bureau_etudiant_intech">
                     <div class="desc">
                         <h3>Web Archi'Techs</h3>
                         <span>Site internet</span>
@@ -220,130 +248,210 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="fh5co-blog animate-box">
-                    <a href="/competences/csharp" class="blog-bg" style="background-image: url(images/csharp.jpg);"></a>
+                    <a asp-controller="Skill"
+                       asp-action="Detail"
+                       asp-route-skillName="csharp" 
+                       class="blog-bg" 
+                       id="skill-csharp"></a>
                     <div class="blog-text">
-                        <h3><a href="/competences/csharp">C#</a></h3>
+                        <h3><a asp-controller="Skill"
+                               asp-action="Detail"
+                               asp-route-skillName="csharp">C#</a></h3>
                         <p>Langage de programmation orienté objet et destiné à développer sur la plateforme Microsoft .NET.</p>
                         <ul class="stuff">
                             <li># Technique</li>
-                            <li><a href="/competences/csharp">Lire plus<i class="icon-arrow-right22"></i></a></li>
+                            <li><a asp-controller="Skill"
+                                   asp-action="Detail"
+                                   asp-route-skillName="csharp">Lire plus<i class="icon-arrow-right22"></i></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="fh5co-blog animate-box">
-                    <a href="/competences/versionning" class="blog-bg" style="background-image: url(images/versionning.jpg);"></a>
+                    <a asp-controller="Skill"
+                       asp-action="Detail"
+                       asp-route-skillName="versionning"  
+                       class="blog-bg" 
+                       id="skill-versionning"></a>
                     <div class="blog-text">
-                        <h3><a href="/competences/versionning">Versionning</a></h3>
+                        <h3><a asp-controller="Skill"
+                               asp-action="Detail"
+                               asp-route-skillName="versionning">Versionning</a></h3>
                         <p>La gestion de versions consiste à gérer l'ensemble des versions d'un ou plusieurs fichiers.</p>
                         <ul class="stuff">
                             <li># Technique</li>
-                            <li><a href="/competences/versionning">Lire plus<i class="icon-arrow-right22"></i></a></li>
+                            <li><a asp-controller="Skill"
+                                   asp-action="Detail"
+                                   asp-route-skillName="versionning">Lire plus<i class="icon-arrow-right22"></i></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="fh5co-blog animate-box">
-                    <a href="/competences/android" class="blog-bg" style="background-image: url(images/android.jpg);"></a>
+                    <a asp-controller="Skill"
+                       asp-action="Detail"
+                       asp-route-skillName="android" 
+                       class="blog-bg" 
+                       id="skill-android"></a>
                     <div class="blog-text">
-                        <h3><a href="/competences/android">Android</a></h3>
+                        <h3><a asp-controller="Skill"
+                               asp-action="Detail"
+                               asp-route-skillName="android">Android</a></h3>
                         <p>Système d'exploitation mobile open-source de Google qui équipe la majorité des smartphones et tablettes du marché.</p>
                         <ul class="stuff">
                             <li># Technique</li>
-                            <li><a href="/competences/android">Lire plus<i class="icon-arrow-right22"></i></a></li>
+                            <li><a asp-controller="Skill"
+                                   asp-action="Detail"
+                                   asp-route-skillName="android">Lire plus<i class="icon-arrow-right22"></i></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="fh5co-blog animate-box">
-                    <a href="/competences/sql" class="blog-bg" style="background-image: url(images/sql.jpg);"></a>
+                    <a asp-controller="Skill"
+                       asp-action="Detail"
+                       asp-route-skillName="sql" 
+                       class="blog-bg" 
+                       id="skill-sql"></a>
                     <div class="blog-text">
-                        <h3><a href="/competences/sql">SQL 📊</a></h3>
+                        <h3><a asp-controller="Skill"
+                               asp-action="Detail"
+                               asp-route-skillName="sql">SQL 📊</a></h3>
                         <p>Langage qui est utilisé pour communiquer avec des bases de données relationnelles. Il permet entre autre de lire, créer, modifier ou bien supprimer des données.</p>
                         <ul class="stuff">
                             <li># Technique</li>
-                            <li><a href="/competences/sql">Lire plus<i class="icon-arrow-right22"></i></a></li>
+                            <li><a asp-controller="Skill"
+                                   asp-action="Detail"
+                                   asp-route-skillName="sql">Lire plus<i class="icon-arrow-right22"></i></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="fh5co-blog animate-box">
-                    <a href="/competences/xamarin" class="blog-bg" style="background-image: url(images/xamarin.jpg);"></a>
+                    <a asp-controller="Skill"
+                       asp-action="Detail"
+                       asp-route-skillName="xamarin" 
+                       class="blog-bg" 
+                       id="skill-xamarin"></a>
                     <div class="blog-text">
-                        <h3><a href="/competences/xamarin">Xamarin</a></h3>
+                        <h3><a asp-controller="Skill"
+                               asp-action="Detail"
+                               asp-route-skillName="xamarin">Xamarin</a></h3>
                         <p>Framework permettant de créer des applications natives pour Android, iOS et macOS en utilisant du code .NET.</p>
                         <ul class="stuff">
                             <li># Technique</li>
-                            <li><a href="/competences/xamarin">Lire plus<i class="icon-arrow-right22"></i></a></li>
+                            <li><a asp-controller="Skill"
+                                   asp-action="Detail"
+                                   asp-route-skillName="xamarin">Lire plus<i class="icon-arrow-right22"></i></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="fh5co-blog animate-box">
-                    <a href="/competences/javascript" class="blog-bg" style="background-image: url(images/javascript.jpg);"></a>
+                    <a asp-controller="Skill"
+                       asp-action="Detail"
+                       asp-route-skillName="javascript"
+                       class="blog-bg" 
+                       id="skill-javascript"></a>
                     <div class="blog-text">
-                        <h3><a href="/competences/javascript">JavaScript</a></h3>
+                        <h3><a asp-controller="Skill"
+                               asp-action="Detail"
+                               asp-route-skillName="javascript">JavaScript</a></h3>
                         <p>Souvent abrégé en "JS", c'est un langage de script léger, orienté objet, principalement connu comme le langage de script des pages web.</p>
                         <ul class="stuff">
                             <li># Technique</li>
-                            <li><a href="/competences/javascript">Lire plus<i class="icon-arrow-right22"></i></a></li>
+                            <li><a asp-controller="Skill"
+                                   asp-action="Detail"
+                                   asp-route-skillName="javascript">Lire plus<i class="icon-arrow-right22"></i></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="fh5co-blog animate-box">
-                    <a href="/competences/communication" class="blog-bg" style="background-image: url(images/communication.jpg);"></a>
+                    <a asp-controller="Skill"
+                       asp-action="Detail"
+                       asp-route-skillName="communication"
+                       class="blog-bg" 
+                       id="skill-communication"></a>
                     <div class="blog-text">
-                        <h3><a href="/competences/communication">Communication</a></h3>
+                        <h3><a asp-controller="Skill"
+                               asp-action="Detail"
+                               asp-route-skillName="communication">Communication</a></h3>
                         <p>Capacité d’un individu à échanger ou transmettre, que ce soit oralement ou par écrit, une information à une ou plusieurs personnes.</p>
                         <ul class="stuff">
                             <li># Transverse</li>
-                            <li><a href="/competences/communication">Lire plus<i class="icon-arrow-right22"></i></a></li>
+                            <li><a asp-controller="Skill"
+                                   asp-action="Detail"
+                                   asp-route-skillName="communication">Lire plus<i class="icon-arrow-right22"></i></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="fh5co-blog animate-box">
-                    <a href="/competences/travail_equipe" class="blog-bg" style="background-image: url(images/travail_equipe.jpg);"></a>
+                    <a asp-controller="Skill"
+                       asp-action="Detail"
+                       asp-route-skillName="travail_equipe" 
+                       class="blog-bg" 
+                       id="skill-travail_equipe"></a>
                     <div class="blog-text">
-                        <h3><a href="/competences/travail_equipe">Travail d'équipe 👨‍👩‍👧‍👦</a></h3>
+                        <h3><a asp-controller="Skill"
+                               asp-action="Detail"
+                               asp-route-skillName="travail_equipe">Travail d'équipe 👨‍👩‍👧‍👦</a></h3>
                         <p>Concept dans lequel des personnes vont interagir et s’organiser entre elles afin d’atteindre un objectif commun.</p>
                         <ul class="stuff">
                             <li># Transverse</li>
-                            <li><a href="/competences/travail_equipe">Lire plus<i class="icon-arrow-right22"></i></a></li>
+                            <li><a asp-controller="Skill"
+                                   asp-action="Detail"
+                                   asp-route-skillName="travail_equipe">Lire plus<i class="icon-arrow-right22"></i></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="fh5co-blog animate-box">
-                    <a href="/competences/montage_video" class="blog-bg" style="background-image: url(images/montage_video.jpg);"></a>
+                    <a asp-controller="Skill"
+                       asp-action="Detail"
+                       asp-route-skillName="montage_video" 
+                       class="blog-bg" 
+                       id="skill-montage_video"></a>
                     <div class="blog-text">
-                        <h3><a href="/competences/montage_video">Montage vidéo</a></h3>
+                        <h3><a asp-controller="Skill"
+                               asp-action="Detail"
+                               asp-route-skillName="montage_video">Montage vidéo</a></h3>
                         <p>Travail consistant à sélectionner des séquences d'images en vidéo et à les assembler en une suite cohérente ou sous forme d'expression artistique.</p>
                         <ul class="stuff">
                             <li># Transverse</li>
-                            <li><a href="/competences/montage_video">Lire plus<i class="icon-arrow-right22"></i></a></li>
+                            <li><a asp-controller="Skill"
+                                   asp-action="Detail"
+                                   asp-route-skillName="montage_video">Lire plus<i class="icon-arrow-right22"></i></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="fh5co-blog animate-box">
-                    <a href="/competences/contact_client" class="blog-bg" style="background-image: url(images/contact_client.jpg);"></a>
+                    <a asp-controller="Skill"
+                       asp-action="Detail"
+                       asp-route-skillName="contact_client"  
+                       class="blog-bg" 
+                       id="skill-contact_client"></a>
                     <div class="blog-text">
-                        <h3><a href="/competences/contact_client">Contact client</a></h3>
+                        <h3><a asp-controller="Skill"
+                               asp-action="Detail"
+                               asp-route-skillName="contact_client">Contact client</a></h3>
                         <p>Capacité d'une personne à récolter et analyser le besoin d'un tiers quelque soit le sujet ou sa forme.</p>
                         <ul class="stuff">
                             <li># Transverse</li>
-                            <li><a href="/competences/contact_client">Lire plus<i class="icon-arrow-right22"></i></a></li>
+                            <li><a asp-controller="Skill"
+                                   asp-action="Detail"
+                                   asp-route-skillName="contact_client">Lire plus<i class="icon-arrow-right22"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -353,7 +461,7 @@
 </div>
 
 <div id="fh5co-consult">
-    <div class="video fh5co-video" style="background-image: url(images/contact.jpg);">
+    <div class="video fh5co-video" id="contact-img">
         <div class="overlay"></div>
     </div>
     <div class="choose animate-box">
@@ -374,7 +482,7 @@
             <div class="row form-group">
                 <div class="col-md-12">
                     <input type="text" id="subject" class="form-control"
-                        placeholder="L'objet de votre message">
+                           placeholder="L'objet de votre message">
                 </div>
             </div>
 
