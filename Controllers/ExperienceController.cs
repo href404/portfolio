@@ -6,5 +6,8 @@ namespace Portfolio.Controllers
     public class ExperienceController : Controller
     {
         public IActionResult Index() => View();
+        
+        [Route("{experienceName}")]
+        public IActionResult Detail(string experienceName) => View();
     }
 }
