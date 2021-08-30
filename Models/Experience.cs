@@ -1,8 +1,9 @@
 ﻿namespace Portfolio.Models
 {
-    public class Experience
+    public class Experience : Article
     {
-        public int Id { get; init; }
-        public string Name { get; init; }
+        public ExperienceType Type { get; init; }
     }
+    
+    public enum ExperienceType { Company, School }
 }

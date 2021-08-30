@@ -19,6 +19,7 @@ namespace Portfolio
             services.AddControllersWithViews();
             services.AddSingleton<ISkillProvider, SkillProvider>();
             services.AddSingleton<IAchievementProvider, AchievementProvider>();
+            services.AddSingleton<IExperienceProvider, ExperienceProvider>();
         }
 
         public static void Configure(IApplicationBuilder app, IWebHostEnvironment env)
