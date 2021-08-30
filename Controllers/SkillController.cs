@@ -28,6 +28,7 @@ namespace Portfolio.Controllers
 
         public async Task<IActionResult> Index()
         {
+            return Redirect("/#fh5co-skills");
             var skills = await _skillProvider.GetSkills();
             var viewModel = new SkillIndexViewModel
             {
