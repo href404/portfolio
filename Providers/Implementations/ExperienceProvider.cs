@@ -27,7 +27,7 @@ namespace Portfolio.Providers.Implementations
                 Name = "intech-sud", 
                 Title = "INTECH Sud", 
                 Entity = "Groupe AEN",
-                Period = "Septembre 2016 à Mars 2019",
+                Period = "Septembre 2016 à Septembre 2021",
                 Description = "Je rejoins l'école INTECH Sud qui m'a permis de faire mes premiers pas dans l'informatique.", 
                 Type = ExperienceType.School,
                 IsVisible = true,
