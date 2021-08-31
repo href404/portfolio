@@ -6,11 +6,11 @@
     
     @if (Model.IsArticleExist())
     {
-        <small class="text-muted"> ・ @Model.Experience.Period ・ @Model.GetReadTime() minutes de lecture</small>
+        <small class="text-muted"> ・ @Model.Experience.Period ・ Statut : @Model.GetExperienceType() ・ @Model.GetReadTime() minutes de lecture</small>
     }
     else
     {
-        <small class="text-muted"> ・ @Model.Experience.Period</small>
+        <small class="text-muted"> ・ @Model.Experience.Period ・ Statut : @Model.GetExperienceType() </small>
     }
     
     <hr class="my-4"/>
