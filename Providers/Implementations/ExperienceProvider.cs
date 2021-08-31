@@ -52,7 +52,7 @@ namespace Portfolio.Providers.Implementations
                 Title = "Stage développeur",
                 Entity = "INFOMIL",
                 Period = "Mars 2019 à Septembre 2019",
-                Description = "SS2I Toulousaine, j’ai intégré le pôle étude et développement durant un stage de 6 mois.", 
+                Description = "Développement de plusieurs modules permettant le diagnostic des problèmes rencontrés sur les terminaux.", 
                 Type = ExperienceType.Company,
                 IsVisible = true,
                 IsWritten = false
@@ -64,7 +64,7 @@ namespace Portfolio.Providers.Implementations
                 Title = "Alternant développeur", 
                 Entity = "INFOMIL",
                 Period = "Septembre 2019 à aujourd'hui",
-                Description = "Je continue mon cursus dans la même entreprise ainsi que dans la même équipe.", 
+                Description = "Développer les fonctionnalités de l'outil de gestion des terminaux et optimiser la procédure de référencement des nouveaux terminaux.", 
                 Type = ExperienceType.Company,
                 IsVisible = true,
                 IsWritten = false
