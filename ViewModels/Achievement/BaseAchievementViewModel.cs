@@ -6,8 +6,8 @@
         {
             return achievement.Type switch
             {
-                Models.AchievementType.Web => "🌐",
-                Models.AchievementType.Mobile => "📱",
+                Models.AchievementType.Web => "Application web",
+                Models.AchievementType.Mobile => "Application mobile",
                 Models.AchievementType.RichClient => "🖥️",
                 _ => "🤷‍♂️"
             };
