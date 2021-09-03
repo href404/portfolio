@@ -26,17 +26,7 @@ namespace Portfolio.Controllers
             _environment = environment;
         }
 
-        public async Task<IActionResult> Index()
-        {
-            return Redirect("/#fh5co-skills");
-            var skills = await _skillProvider.GetSkills();
-            var viewModel = new SkillIndexViewModel
-            {
-                Technicals = skills.Where(s => s.Type == SkillType.Technical),
-                Humans = skills.Where(s => s.Type == SkillType.Human)
-            };
-            return View(viewModel);
-        }
+        public IActionResult Index() => Redirect("/#fh5co-skills");
 
         [Route("{skillName}")]
         public async Task<IActionResult> Detail(string skillName)

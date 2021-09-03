@@ -25,13 +25,7 @@ namespace Portfolio.Controllers
             _environment = environment;
         }
 
-        public async Task<IActionResult> Index()
-        {
-            return Redirect("/#fh5co-work");
-            var achievements = await _achievementProvider.GetAchievements();
-            var viewModel = new AchievementIndexViewModel { Achievements = achievements };
-            return View(viewModel);
-        }
+        public IActionResult Index() => Redirect("/#fh5co-work");
 
         [Route("{achievementName}")]
         public async Task<IActionResult> Detail(string achievementName)
