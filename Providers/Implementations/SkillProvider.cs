@@ -107,7 +107,7 @@ namespace Portfolio.Providers.Implementations
             {
                 Id = 9,
                 Name = "versionning",
-                Title = "Versionning 🗄",
+                Title = "Versionning",
                 Description = "La gestion de versions consiste à gérer l'ensemble des versions d'un ou plusieurs fichiers.",
                 Type = SkillType.Technical,
                 Level = "Performant",
