@@ -6,7 +6,7 @@
         <span class="badge badge-primary">@Model.GetSkillType(Model.Skill)</span>
         @if (Model.IsArticleExist())
         {
-            <small class="text-muted ml-1"> ・ @Model.GetReadTime() minutes de lecture</small>
+            <small class="text-muted ml-1"> ・ Niveau : @Model.Skill.Level ・ Expérience : @Model.Skill.WorkingTime ・ Temps de lecture : @Model.GetReadTime() minutes</small>
         }
     </div>
 

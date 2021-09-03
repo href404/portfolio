@@ -15,9 +15,5 @@ namespace Portfolio.ViewModels.Skill
                 _ => "🤷‍♂️"
             };
         }
-        
-        public int GetLevelRounded(Models.Skill skill) => Convert.ToInt32(Math.Floor(skill.Level));
-        public bool IsLevelDecimal(Models.Skill skill) => skill.Level % 1 != 0;
-        public int GetEmptyStarsCount(Models.Skill skill) => Convert.ToInt32(Math.Floor(MaxStars - skill.Level));
     }
 }

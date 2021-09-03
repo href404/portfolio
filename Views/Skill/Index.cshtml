@@ -16,11 +16,6 @@
                            asp-route-skillname=@skill.Name>
                             <h5 class="m-0">@skill.Title</h5>
                         </a>
-                        <div class="d-flex ml-1">
-                            @for (var i = 0; i < Model.GetLevelRounded(skill); i++) { <i class="fas fa-star"></i> }
-                            @if (Model.IsLevelDecimal(skill)) { <i class="fas fa-star-half-alt"></i> }
-                            @for (var i = 0; i < Model.GetEmptyStarsCount(skill); i++) { <i class="far fa-star"></i> }
-                        </div>
                     </div>
                     <p class="card-text">@skill.Description</p>
                 }
@@ -49,11 +44,6 @@
                            asp-route-skillname=@skill.Name>
                             <h5 class="m-0">@skill.Title</h5>
                         </a>
-                        <div class="d-flex ml-1">
-                            @for (var i = 0; i < Model.GetLevelRounded(skill); i++) { <i class="fas fa-star"></i> }
-                            @if (Model.IsLevelDecimal(skill)) { <i class="fas fa-star-half-alt"></i> }
-                            @for (var i = 0; i < Model.GetEmptyStarsCount(skill); i++) { <i class="far fa-star"></i> }
-                        </div>
                     </div>
                     <p class="card-text">@skill.Description</p>
                 }
