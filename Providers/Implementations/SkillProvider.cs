@@ -18,7 +18,8 @@ namespace Portfolio.Providers.Implementations
                 Title = "C#",
                 Description = "Langage de programmation orienté objet et destiné à développer sur la plateforme Microsoft .NET.",
                 Type = SkillType.Technical,
-                Level = 4.5,
+                Level = "Performant",
+                WorkingTime = "4 ans",
                 Achievements = new List<string> { "recuperation_log_terminaux", "migration_sql", "surveillance_terminaux", "gestion_parc_terminaux", "chambre_agriculture" },
                 IsVisible = true,
                 IsWritten = true
@@ -30,7 +31,8 @@ namespace Portfolio.Providers.Implementations
                 Title = "Android",
                 Description = "Système d'exploitation mobile open-source de Google qui équipe la majorité des smartphones et tablettes du marché.",
                 Type = SkillType.Technical,
-                Level = 4,
+                Level = "Performant",
+                WorkingTime = "3 ans",
                 Achievements = new List<string> { "surveillance_terminaux", "lecteur_configuration", "wawee" },
                 IsVisible = true,
                 IsWritten = true
@@ -42,7 +44,8 @@ namespace Portfolio.Providers.Implementations
                 Title = "Xamarin",
                 Description = "Framework permettant de créer des applications natives pour Android, iOS et macOS en utilisant du code .NET.",
                 Type = SkillType.Technical,
-                Level = 3,
+                Level = "Compétent",
+                WorkingTime = "2 ans",
                 Achievements = new List<string> { "chambre_agriculture" },
                 IsVisible = true,
                 IsWritten = true
@@ -54,7 +57,8 @@ namespace Portfolio.Providers.Implementations
                 Title = "JavaScript",
                 Description = "Souvent abrégé en \"JS\", c'est un langage de script léger, orienté objet, principalement connu comme le langage de script des pages web.",
                 Type = SkillType.Technical,
-                Level = 3,
+                Level = "Compétent",
+                WorkingTime = "2 ans",
                 Achievements = new List<string> { "gestion_parc_terminaux", "lecteur_configuration", "clinique_st_hilaire", "upsa", "still_english", "bureau_etudiant_intech" },
                 IsVisible = true,
                 IsWritten = true
@@ -65,7 +69,7 @@ namespace Portfolio.Providers.Implementations
                 Name = "docker",
                 Title = "Docker 🐋",
                 Type = SkillType.Technical,
-                Level = 2,
+                Level = "Compétent",
                 Achievements = new List<string> { "lecteur_configuration" }
             },
             new Skill
@@ -74,7 +78,7 @@ namespace Portfolio.Providers.Implementations
                 Name = "bash",
                 Title = "Bash",
                 Type = SkillType.Technical,
-                Level = 2,
+                Level = "Compétent",
                 Achievements = new List<string> { "lecteur_configuration" }
             },
             new Skill
@@ -83,7 +87,7 @@ namespace Portfolio.Providers.Implementations
                 Name = "php",
                 Title = "PHP",
                 Type = SkillType.Technical,
-                Level = 2.5,
+                Level = "Compétent",
                 Achievements = new List<string> { "still_english", "upsa", "clinique_st_hilaire", "wawee" }
             },
             new Skill
@@ -93,7 +97,8 @@ namespace Portfolio.Providers.Implementations
                 Title = "SQL 📊",
                 Description = "Langage qui est utilisé pour communiquer avec des bases de données relationnelles. Il permet entre autre de lire, créer, modifier ou bien supprimer des données.",
                 Type = SkillType.Technical,
-                Level = 4,
+                Level = "Performant",
+                WorkingTime = "4 ans",
                 Achievements = new List<string> { "gestion_parc_terminaux", "migration_sql", "recuperation_log_terminaux", "chambre_agriculture", "wawee", "clinique_st_hilaire", "upsa", "still_english" },
                 IsWritten = true,
                 IsVisible = true
@@ -102,10 +107,11 @@ namespace Portfolio.Providers.Implementations
             {
                 Id = 9,
                 Name = "versionning",
-                Title = "Versionning 🗄",
+                Title = "Versionning",
                 Description = "La gestion de versions consiste à gérer l'ensemble des versions d'un ou plusieurs fichiers.",
                 Type = SkillType.Technical,
-                Level = 4.5,
+                Level = "Performant",
+                WorkingTime = "4 ans",
                 Achievements = new List<string> { "gestion_parc_terminaux", "migration_sql", "recuperation_log_terminaux", "chambre_agriculture", "wawee", "clinique_st_hilaire", "upsa", "still_english", "bureau_etudiant_intech" },
                 IsVisible = true,
                 IsWritten = true
@@ -117,7 +123,8 @@ namespace Portfolio.Providers.Implementations
                 Title = "Communication",
                 Description = "Capacité d’un individu à échanger ou transmettre, que ce soit oralement ou par écrit, une information à une ou plusieurs personnes.",
                 Type = SkillType.Human,
-                Level = 4,
+                Level = "Performant",
+                WorkingTime = "5 ans",
                 Achievements = new List<string> 
                 { 
                     "bureau_etudiant_intech", 
@@ -142,7 +149,8 @@ namespace Portfolio.Providers.Implementations
                 Title = "Contact client", 
                 Description = "Capacité d'une personne à récolter et analyser le besoin d'un tiers quelque soit le sujet ou sa forme.",
                 Type = SkillType.Human,
-                Level = 3,
+                Level = "Compétent",
+                WorkingTime = "4 ans",
                 Achievements = new List<string>(),
                 IsVisible = true,
                 IsWritten = true
@@ -154,7 +162,8 @@ namespace Portfolio.Providers.Implementations
                 Title = "Travail d'équipe 👨‍👩‍👧‍👦", 
                 Description = "Concept dans lequel des personnes vont interagir et s’organiser entre elles afin d’atteindre un objectif commun.",
                 Type = SkillType.Human,
-                Level = 4,
+                Level = "Performant",
+                WorkingTime = "5 ans",
                 Achievements = new List<string> 
                 { 
                     "bureau_etudiant_intech", 
@@ -178,7 +187,7 @@ namespace Portfolio.Providers.Implementations
                 Name = "formation", 
                 Title = "Formation", 
                 Type = SkillType.Human,
-                Level = 2.5,
+                Level = "Compétent",
                 Achievements = new List<string>()
             },
             new Skill 
@@ -188,7 +197,8 @@ namespace Portfolio.Providers.Implementations
                 Title = "Montage vidéo", 
                 Description = "Travail consistant à sélectionner des séquences d'images en vidéo et à les assembler en une suite cohérente ou sous forme d'expression artistique.",
                 Type = SkillType.Human,
-                Level = 3.5,
+                Level = "Performant",
+                WorkingTime = "5 ans",
                 Achievements = new List<string> { "wawee" },
                 IsVisible = true,
                 IsWritten = true
@@ -199,7 +209,7 @@ namespace Portfolio.Providers.Implementations
                 Name = "gestion_budget", 
                 Title = "Gestion de budget", 
                 Type = SkillType.Human,
-                Level = 2,
+                Level = "Compétent",
                 Achievements = new List<string>()
             },
         };

@@ -1,0 +1,18 @@
+﻿@model Portfolio.ViewModels.Experience.ExperienceDetailViewModel
+
+<div class="container col-md-7 mx-auto py-4">
+    <h2>@Model.Experience.Title - @Model.Experience.Entity</h2>
+    <span class="badge badge-primary">Expérience</span>
+    
+    @if (Model.IsArticleExist())
+    {
+        <small class="text-muted"> ・ @Model.Experience.Period ・ Statut : @Model.GetExperienceType() ・ @Model.GetReadTime() minutes de lecture</small>
+    }
+    else
+    {
+        <small class="text-muted"> ・ @Model.Experience.Period ・ Statut : @Model.GetExperienceType() </small>
+    }
+    
+    <hr class="my-4"/>
+    @Html.Raw(Model.GetStaticHtml())
+</div>

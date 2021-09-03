@@ -1,35 +1,32 @@
 ﻿@model Portfolio.ViewModels.Skill.SkillDetailViewModel
 
-<h2>@Model.Skill.Title</h2>
-<div class="d-flex align-items-center">
-    <span class="badge badge-primary">@Model.GetSkillType(Model.Skill)</span>
-    @if (Model.IsArticleExist())
+<div class="container col-md-7 mx-auto py-4">
+    <h2>@Model.Skill.Title</h2>
+    <div class="d-flex align-items-center">
+        <span class="badge badge-primary">@Model.GetSkillType(Model.Skill)</span>
+        @if (Model.IsArticleExist())
+        {
+            <small class="text-muted ml-1"> ・ Niveau : @Model.Skill.Level ・ Expérience : @Model.Skill.WorkingTime ・ Temps de lecture : @Model.GetReadTime() minutes</small>
+        }
+    </div>
+
+    <hr class="my-4" />
+    @Html.Raw(Model.GetStaticHtml())
+
+    @if (Model.Achievements.Any())
     {
-        <small class="text-muted ml-1"> ・ @Model.GetReadTime() minutes de lecture ・ </small>
-        <div class="d-flex ml-1">
-            @for (var i = 0; i < Model.GetLevelRounded(Model.Skill); i++) { <i class="fas fa-star"></i> }
-            @if (Model.IsLevelDecimal(Model.Skill)) { <i class="fas fa-star-half-alt"></i> }
-            @for (var i = 0; i < Model.GetEmptyStarsCount(Model.Skill); i++) { <i class="far fa-star"></i> }
-        </div>
+        <hr class="my-4" />
+        <ul class="list-inline">
+            @foreach (var achievement in Model.Achievements)
+            {
+                <li class="list-inline-item">
+                    <a class="badge badge-dark" 
+                       asp-controller="Achievement" 
+                       asp-action="Detail" 
+                       asp-route-achievementname=@achievement.Name>
+                    @achievement.Title</a>
+                </li>
+            }
+        </ul>
     }
 </div>
-
-<hr class="my-4" />
-@Html.Raw(Model.GetStaticHtml())
-
-@if (Model.Achievements.Any())
-{
-    <hr class="my-4" />
-    <ul class="list-inline">
-        @foreach (var achievement in Model.Achievements)
-        {
-            <li class="list-inline-item">
-                <a class="badge badge-dark" 
-                   asp-controller="Achievement" 
-                   asp-action="Detail" 
-                   asp-route-achievementname=@achievement.Name>
-                @achievement.Title</a>
-            </li>
-        }
-    </ul>
-}
