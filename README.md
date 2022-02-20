@@ -1,5 +1,9 @@
 # Portfolio
-    
+
+Site internet réalisé pour la validation de mon master en ingénierie du logiciel à IN'TECH.
+
+## Checklist
+
 ### Semestre 7 
 - [x] Analyse des exemples de portfolios en binôme
 - [x] Lieux de stockage et de sauvegarde
