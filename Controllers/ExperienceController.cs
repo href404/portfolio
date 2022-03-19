@@ -3,7 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
-using Portfolio.Providers.Implementations;
+using Portfolio.Providers;
 using Portfolio.ViewModels.Experience;
 
 namespace Portfolio.Controllers

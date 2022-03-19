@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using Portfolio.Models;
 
-namespace Portfolio.Providers.Implementations
+namespace Portfolio.Providers
 {
     public interface IExperienceProvider
     {
