@@ -7,7 +7,6 @@ using Portfolio.Providers.Implementations;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddSingleton<ISkillProvider, SkillProvider>();
 builder.Services.AddSingleton<IAchievementProvider, AchievementProvider>();
@@ -24,16 +23,9 @@ app.UseForwardedHeaders(new ForwardedHeadersOptions
 
 if (!app.Environment.IsDevelopment()) 
 {
-    app.UseExceptionHandler("/error");
+    app.UseExceptionHandler("/Error");
     app.UseHsts();
 }
-
-app.Use(async (context, next) => {
-    await next();
-    if (context.Response.StatusCode != 404) return;
-    context.Request.Path = "/error";
-    await next();
-});
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
